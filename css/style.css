@@ -1,0 +1,220 @@
+/* Author - Raj Kumar || Date - 20-04-2022 */
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('../fonts/HelveticaNeueMed.ttf')
+}
+@font-face {
+    font-family: 'Helvetica_Medium';
+    src: url('../fonts/HelveticaNeue_Medium.ttf')
+}
+
+html,
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+/* Global */
+/* :root {
+    --blue: #1e90ff;
+    --white: #ffffff;
+} */
+.bg-dark{
+    background-color: #000 !important;
+}
+.center-align{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.px-150{
+    padding: 0 150px;
+}
+.px-12-py-0{
+    padding: 0 12px;
+}
+.mr-10{
+    margin-right: 10px;
+}
+
+/* Top Navigation */
+.top-nav{
+    padding: 8px 150px;
+}
+.top-nav-element-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.lang-drp-wrap{
+    margin: 0 20px;
+}
+.lang-drp-wrap .btn-group{
+    vertical-align: inherit;
+}
+.top-nav-link{
+    font: 12px 'HelveticaNeue', sans-serif;
+    /* font-weight: 600; */
+    color: rgba(255,255,255,62%);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.top-nav-link span{
+    margin: 0 10px;
+}
+.top-nav-link::after{
+    display: none;
+}
+.top-nav-link ~ .dropdown-menu{
+    padding: 5px 10px;
+    font: 12px 'HelveticaNeue', sans-serif;
+}
+.top-nav-link ~ .dropdown-menu li span{
+    margin-left: 10px;
+}
+.account-wrap{
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font: 12px 'HelveticaNeue', sans-serif;
+    /* font-weight: 600; */
+    text-transform: uppercase;
+}
+.account-wrap span{
+    margin-left: 10px;
+}
+/* Navbar */
+.mobile-nav-icons,.mobile-nav-sub-top-menu{
+    display: none;
+}
+nav.navbar{
+    padding: 8px 150px;
+}
+ul.navbar-nav{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.navbar-nav .nav-item{
+    position: relative;
+    font: 12px 'HelveticaNeue', sans-serif;
+    /* font-weight: 600; */
+}
+.navbar-nav .nav-item .nav-link{
+    padding: 8px 12px;
+}
+.navbar-nav .nav-item:after{
+    content: '|';
+    color: #000;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#navbarNav{
+    display: grid !important;
+    align-items: center;
+    justify-content: end;
+}
+.after-none::after{
+    display: none;
+}
+.nav-search-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-search{
+    width: 155px;
+    height: 24px;
+    position: relative;
+    padding: 6px 30px 6px 10px;
+    font: 12px 'HelveticaNeue', sans-serif;
+    /* font-weight: 600; */
+    background-color: #EBEBEB;
+    border: none;
+}
+.nav-search:focus{
+    outline: none;
+    box-shadow: none;
+}
+.nav-search::placeholder{
+    color: rgba(0,0,0,50%);
+}
+.search-icon{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Footer */
+.footer{
+    padding: 80px 150px;
+}
+.footer-links{
+    display: flex;
+    justify-content: space-around;
+}
+.footer-links ul{
+    list-style: none;
+}
+.footer-links ul li a{
+    font: 14px 'Helvetica_Medium', sans-serif;
+    color: #fff;
+    text-decoration: none;
+}
+.footer-email-input{
+    position: relative;
+}
+.footer-email-input input{
+    background: #000;
+    color: #fff;
+    font: 12px 'HelveticaNeue', sans-serif;
+    border: 2px solid #fff;
+    height: 42px;
+}
+.footer-email-input input::placeholder{
+    color: #fff;
+}
+.footer-email-input input:focus{
+    outline: none;
+    box-shadow: none;
+}
+.footer-email-input .email-send{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.stay-in-touch-text{
+    color: #fff;
+    font: 12px 'HelveticaNeue', sans-serif;
+    text-align: center;
+    margin-top: 20px;
+}
+.copyright-text{
+    margin-top: 70px;
+    color: #fff;
+    font: 14px 'HelveticaNeue', sans-serif;
+    text-align: center;
+}
+.social-icon-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 50%;
+}
+.sm-footer-input-container, .sm-copyright-text{
+    display: none;
+}
