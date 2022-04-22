@@ -11,6 +11,10 @@
     font-family: 'Helvetica_Light';
     src: url('../fonts/HelveticaNeue_Light.ttf')
 }
+@font-face {
+    font-family: 'Helvetica_Neu_Bold';
+    src: url('../fonts/Helvetica_Neu_Bold.ttf')
+}
 
 html,
 body {
@@ -39,11 +43,15 @@ body {
     align-items: center;
     justify-content: center;
 }
-.px-150{
-    padding: 0 150px;
-}
 .px-12-py-0{
     padding: 0 12px;
+}
+.pb-15{
+    padding-bottom: 15px !important;
+}
+.px-7{
+    padding-left: 7px;
+    padding-right: 7px;
 }
 .mr-10{
     margin-right: 10px;
@@ -308,7 +316,7 @@ ul.navbar-nav{
     z-index: 9;
     left: 12px;
 }
-.owl-carousel .item{
+.banner-community-carousel .owl-carousel .item{
     background: #EDEEF2;
     border-radius: 20px;
     padding: 20px;
@@ -358,5 +366,186 @@ ul.navbar-nav{
     text-align: center;
 }
 .lg-none{
+    display: none;
+}
+
+/* Section titles */
+.section-title-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #F2F3F6;
+    padding: 30px 150px;
+    border-top: 1px solid #B4B5B9;
+    border-bottom: 1px solid #B4B5B9;
+    margin-bottom: 0;
+}
+.section-title-wrap span{
+    font: 30px 'Helvetica_Neu_Bold', sans-serif;
+    text-transform: uppercase;
+}
+.section-title-wrap .see-more-link{
+    box-shadow: inset 3px 3px 6px -2px rgb(88 108 138 / 50%);
+    font: 16px 'Helvetica_Neu_Bold', sans-serif;
+    text-decoration: none;
+    color: #343A40;
+    padding: 12px;
+    border-radius: 25px;
+}
+.section-title-wrap .see-more-link:hover{
+    box-shadow: 3px 3px 6px -2px rgb(88 108 138 / 50%);
+}
+
+/* Company section */
+.company-logo-row{
+    padding: 40px 150px;
+    background-image: linear-gradient(to bottom, #F8F8FC, #E1E2E8)
+}
+.company-logo-box img{
+    width: 100%;
+    height: 100%;
+}
+.company-logo-box{
+    background: #fff;
+    text-align: center;
+    border: 1px solid #707070;
+    padding: 5px;
+    margin-bottom: 15px;
+    height: 130px;
+}
+.company-video-box{
+    border: 1px solid #707070;
+    padding: 5px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Best Seller */
+.section-title-without-see-more{
+    font: 30px 'Helvetica_Neu_Bold', sans-serif;
+    margin-bottom: 45px;
+}
+.best-seller-container{
+    padding: 40px 150px;
+}
+.best-seller-product-img-wrap{
+    background: #F5F5F5;
+    padding: 20px 30px;
+}
+.best-seller-product-img-wrap img{
+    width: auto !important;
+    height: 134px;
+    margin: 0 auto;
+}
+.best-seller-product-details{
+    border: 2px solid #E8E8E8;
+    border-top: unset;
+    padding: 15px;
+}
+.product-title{
+    font: 15px 'Helvetica_Neu_Bold', sans-serif;
+}
+.product-desc{
+    font: 12px 'Helvetica_Neu_Bold', sans-serif;
+    color: #A6ADB4;
+    margin-bottom: 5px;
+}
+.product-desc-wran{
+    font: 12px 'Helvetica_Neu_Bold', sans-serif;
+    color: #0069D9;
+    margin-bottom: 0;
+}
+.product-price-wrap, .product-button-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.product-price-wrap{
+    margin: 15px 0;
+}
+.product-price-wrap .product-discount-price{
+    font: 15px 'Helvetica_Neu_Bold', sans-serif;
+}
+.product-price-wrap .product-actual-price{
+    color: #7E7F84;
+    font: 15px 'HelveticaNeue', sans-serif;
+    text-decoration: line-through;
+}
+.product-button-wrap img{
+    width: auto !important;
+}
+
+/* Promo Section */
+.promo-shop-section-container{
+    background-image: radial-gradient(#F1F2F2, #EDEEEE, #E1E2E3, #CED0D1, #BCBEC0);
+    padding: 40px 150px;
+    margin-bottom: 10px;
+}
+.promo-shop-section-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.promo-stars{
+    max-width: 43%;
+}
+/* .promo-feedback{
+    width: 300px;
+} */
+.promo-text-wrap{
+    text-align: center;
+}
+.promo-text-wrap h1{
+    font: 52px 'Helvetica_Neu_Bold', sans-serif;
+}
+.promo-text-wrap .btn-promo-shop{
+    background-color: #fff;
+    border-radius: 50px;
+    padding: 7px 30px;
+    margin-top: 20px;
+    font: 32px 'Helvetica_Neu_Bold', sans-serif;
+}
+
+/* Brand */
+.brand-row{
+    padding: 40px 150px;
+    background-color: #fff;
+}
+.brands-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+.brand-box, .internet-card-box {
+    border: 1px solid #707070;
+}
+
+/* Internet cards */
+.internet-card-container{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+.internet-card-wrap{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 15px;
+    position: relative;
+}
+.internet-card-wrap::after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    background-color: #707070;
+    right: -24%;
+}
+.internet-card-wrap:last-child::after{
     display: none;
 }
