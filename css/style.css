@@ -46,6 +46,15 @@ body {
 .px-12-py-0{
     padding: 0 12px;
 }
+.px-lg-30{
+    padding: 0 30px;
+}
+.pr-lg-30{
+    padding-right: 30px;
+}
+.pl-lg-30{
+    padding-right: 30px;
+}
 .pb-15{
     padding-bottom: 15px !important;
 }
@@ -239,8 +248,11 @@ ul.navbar-nav{
     padding: 30px 150px;
     width: 100%;
 }
-.banner-carousel .carousel-indicators{
+.banner-carousel.home-carousel .carousel-indicators{
     bottom: 220px;
+}
+.banner-carousel.otherPage-Carousel .carousel-indicators{
+    bottom: 25px;
 }
 .banner-carousel .carousel-caption{
     position: absolute;
@@ -316,7 +328,7 @@ ul.navbar-nav{
     z-index: 9;
     left: 12px;
 }
-.banner-community-carousel .owl-carousel .item{
+.banner-community-carousel.owl-carousel .item{
     background: #EDEEF2;
     border-radius: 20px;
     padding: 20px;
@@ -514,14 +526,20 @@ ul.navbar-nav{
     background-color: #fff;
 }
 .brands-wrap{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
     align-items: center;
     justify-content: center;
     gap: 15px;
-    margin-bottom: 15px;
 }
 .brand-box, .internet-card-box {
     border: 1px solid #707070;
+    padding: 3px;
+    height: 130px;
+}
+.brand-box img, .internet-card-box img{
+    width: 100%;
+    height: 100%;
 }
 
 /* Internet cards */
@@ -548,4 +566,126 @@ ul.navbar-nav{
 }
 .internet-card-wrap:last-child::after{
     display: none;
+}
+.sm-internet-card-container{
+    display: none;
+}
+
+/* Special Numbers */
+.special-num-img{
+    border: 1px solid #707070;
+    width: 100%;
+}
+.special-numbers-list{
+    list-style: none;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0px 3px 6px rgb(0 0 0 / 16%);
+    max-height: 298px;
+    overflow-y: auto;
+}
+.special-numbers-list li{
+    font: 32px 'Helvetica_Neu_Bold', sans-serif;
+    margin-bottom: 8px;
+}
+.special-numbers-list li.text-red{
+    color: #EC1C24;
+}
+.special-numbers-list li.text-teal{
+    color: #1696A1;
+}
+.special-numbers-list li.text-purple{
+    color: #502C84;
+}
+.special-num-grid{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+
+/* Company Page */
+.back-link{
+    color: #666666;
+    text-decoration: none;
+    font: 16px 'HelveticaNeue', sans-serif;
+}
+.back-link i{
+    margin-right: 10px;
+}
+.pagination-wrap{
+    margin-top: 40px;
+}
+.pagination-icon{
+    width: 40px;
+}
+.pagination-wrap .page-item{
+    display: flex;
+    align-items: center;
+}
+.pagination-wrap .page-item .page-link{
+    border: none;
+    color: #000;
+    font: 16px 'Helvetica_Neu_Bold', sans-serif;
+}
+.pagination-wrap .page-item .page-link:focus{
+    box-shadow: none;
+}
+.pagination-wrap .page-item .page-link:hover{
+    border-radius: 100px;
+}
+.pagination-wrap .page-item.pagination-prev-wrap {
+    margin-right: 70px;
+}
+.pagination-wrap .page-item.pagination-next-wrap {
+    margin-left: 70px;
+}
+.pagination-wrap .page-item.active .page-link{
+    background: #000;
+    color: #fff !important;
+    border-radius: 50px;
+}
+
+/* Company category */
+.section-title-wrap.section-title-without-bg {
+    background: #fff;
+}
+.section-title-wrap.section-title-without-bg span{
+    font: 16px 'HelveticaNeue', sans-serif;
+}
+.company-promo{
+    background: #EFF0F4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 150px;
+}
+.company-promo .brand-box{
+    margin: 0 50px;
+}
+.video-container{
+    border: 1px solid #707070;
+}
+.tabs-bg{
+    background-color: #F2F3F6;
+}
+.nav-pills-container{
+    padding: 30px 150px;
+}
+.nav-pills-container .nav-fill .nav-item .nav-link{
+    background-image: linear-gradient(to right, #F2F3F6, #E5E6EC);
+    padding: 16px 10px;
+    color: #575F6B;
+    text-transform: uppercase;
+    font: 20px 'HelveticaNeue', sans-serif;
+    border-radius: 40px;
+    box-shadow: 6px 6px 10px 0 rgb(0 0 0 / 9%), -8px -8px 12px 0 rgb(255 255 255 / 40%);
+}
+.nav-pills-container .nav-fill .nav-item .nav-link:hover{
+    box-shadow: inset 6px 6px 10px 1px rgb(0 0 0 / 9%), -8px -8px 12px 0 rgb(255 255 255 / 40%);
+}
+.nav-pills-container .nav-fill{
+    gap: 75px;
 }
