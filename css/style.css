@@ -674,6 +674,7 @@ ul.navbar-nav{
 .nav-pills-container{
     padding: 30px 150px;
 }
+
 .nav-pills-container .nav-fill .nav-item .nav-link{
     background-image: linear-gradient(to right, #F2F3F6, #E5E6EC);
     padding: 16px 10px;
