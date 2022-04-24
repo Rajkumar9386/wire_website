@@ -22,8 +22,25 @@
     .bannerModel-box{
         right: 30px;
     }
+    #all-phones{
+        padding: 0px 30px 20px;
+    }
 }
 @media (max-width: 992px) {
+    .sm-px-15{
+        padding:15px !important;
+    }
+    .sm-plr-15{
+        padding: 0 15px;
+    }
+    .sm-section-title-wrap{
+        display: block;
+        font: 11px 'HelveticaNeue', sans-serif;
+        color: #9E9E9E;
+    }
+    .search-wrapper, .lg-dropdowns-container{
+        display: none;
+    }
     #navbarNav.collapse:not(.show){
         display: none !important;
     }
@@ -149,7 +166,7 @@
     .internet-card-container{
         display: none;
     }
-    .sm-internet-card-container{
+    .sm-internet-card-container, .sm-dropdowns-container{
         display: block;
     }
     .sm-internet-card-container .internet-card-wrap{
@@ -212,6 +229,72 @@
         margin: 0 15px;
         width: 100%;
         height: 100%;
+    }
+    .tabs-bg .nav-pills-container{
+        padding: 15px 7px;
+    }
+    .tabs-bg .nav-pills-container .nav-fill .nav-item .nav-link{
+        font-size: 11px;
+        padding: 8px 12px;
+    }
+    .tabs-bg .nav-fill .nav-item{
+        flex: 0 auto;
+    }
+    .tabs-bg .nav-pills-container .nav-fill{
+        gap: 15px;
+        justify-content: center;
+    }
+    .company-category-tabs{
+        padding: 0px 15px;
+    }
+    .tab-section-title{
+        font-size: 14px;
+    }
+    .line-img, .arrow-wrap{
+        display: none;
+    }
+    .company-category-tabs .best-seller-owl-carousel .item{
+        padding: 0 20px;
+    }
+    .company-category-tabs .best-seller-owl-carousel .owl-prev {
+        left: -8px !important;
+    }
+    .company-category-tabs .best-seller-owl-carousel .owl-next {
+        right: -8px !important;
+    }
+    .product-title, .p-desc, .p-code, .p-warn-text{
+        font-size: 10px;
+    }
+    .product-button-wrap .btn-dark{
+        font-size: 10px;
+    }
+    .tab-section-title{
+        padding-top: 10px;
+    }
+    #all-phones{
+        padding: 0px 15px;
+    }
+    .sm-drp-link, .product-drp-wrap .dropdown-menu{
+        font: 11px 'HelveticaNeue', sans-serif;
+        color: #000;
+        text-decoration: none;
+    }
+    .product-drp-wrap .dropdown-menu{
+        padding: 10px;
+    }
+    .product-drp-wrap .dropdown-menu li{
+        margin-bottom: 5px;
+    }
+    .sm-dropdowns-container .dropdown-wrap{
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 4px;
+    }
+    .sm-dropdowns-container .product-drp-wrap{
+        display: inline-block;
     }
 }
 

@@ -62,6 +62,12 @@ body {
     padding-left: 7px;
     padding-right: 7px;
 }
+.mt-20{
+    margin-top: 20px;
+}
+.sm-px-15{
+    padding: 0 !important;
+}
 .mr-10{
     margin-right: 10px;
 }
@@ -482,6 +488,7 @@ ul.navbar-nav{
     background: #F5F5F5;
     padding: 20px 30px;
     display: block;
+    text-align: center;
 }
 .best-seller-product-img-wrap img{
     width: auto !important;
@@ -743,13 +750,14 @@ ul.navbar-nav{
 .nav-pills-container .nav-fill{
     gap: 75px;
 }
-/* .company-category-tabs{
-    margin-top: 40px;
-} */
+.company-category-tabs{
+    padding: 0 150px;
+    background-color: #F2F3F6;
+}
 .tab-section-title{
     font: 22px 'Helvetica_Neu_Bold', sans-serif;
     margin-bottom: 20px;
-    margin-top: 40px;
+    padding-top: 40px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -805,4 +813,74 @@ h6.product-title.tab-product-title {
 }
 .arrow-wrap{
     display: inline-block;
+}
+#all-phones{
+    padding: 0px 150px 20px;
+}
+.search-wrapper input{
+    border: 1px solid rgba(112,112,112,16%);
+    border-radius: unset;
+    padding-right: 40px;
+    font: 14px 'HelveticaNeue', sans-serif;
+    height: 42px;
+}
+.product-drp-wrap select{
+    border: 1px solid rgba(112,112,112,16%);
+    border-radius: unset;
+    font: 11px 'HelveticaNeue', sans-serif;
+    color: #BABABA;
+    height: 24px;
+    width: 55%;
+    padding: 3px 5px;
+    margin-left: 10px;
+}
+.search-wrapper input:focus{
+    outline: none;
+    box-shadow: none;
+}
+.search-wrapper input::placeholder{
+    color: rgba(0,0,0,50%);
+}
+.search-wrapper{
+    position: relative;
+}
+.search-wrapper .search-icon{
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.label-text{
+    color: #000;
+    font: 13px 'Helvetica_Medium', sans-serif;
+}
+.dropdowns-container .dropdown-wrap{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 20px;
+}
+.product-drp-wrap{
+    display: flex;
+    align-items: center;
+}
+.phones-card{
+    margin-top: 20px;
+    display: flex;
+    border: 2px solid #F4F6F8;
+    background-color: #fff;
+}
+.phones-card .best-seller-product-details{
+    border: unset
+}
+.phones-card .best-seller-product-img-wrap{
+    background-color: #fff;
+}
+#phones .brands-container{
+    padding: 0 15px;
+}
+.sm-section-title-wrap, .sm-dropdowns-container{
+    display: none;
 }
