@@ -881,6 +881,71 @@ h6.product-title.tab-product-title {
 #phones .brands-container{
     padding: 0 15px;
 }
-.sm-section-title-wrap, .sm-dropdowns-container{
+.sm-section-title-wrap, .sm-dropdowns-container, .mobile-view-flex, .mobile-view-block, .mobile-view{
     display: none;
+}
+
+/* Product Details*/
+.section-title-wrap .regular-font{
+    font: 16px 'HelveticaNeue', sans-serif;
+    color: #666666;
+}
+.product-detail-row{
+    padding: 30px 150px;
+}
+.product-detail-content-wrap{
+    padding-left: 40px;
+}
+.product-detail-title{
+    font: 24px 'Helvetica_Neu_Bold', sans-serif;
+    color: #000;
+}
+.product-detail-comp-name{
+    color: #007FFF;
+    font: 18px 'Helvetica_Neu_Bold', sans-serif;
+    margin: 15px 0;
+}
+.product-detail-price{
+    font-family: 'Helvetica_Neu_Bold', sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.product-detail-discount{
+    font-size: 28px;
+}
+.product-detail-actual{
+    font-size: 24px;
+    text-decoration: line-through;
+}
+.product-detail-content-wrap .btn-dark{
+    font-family: 'Helvetica_Neu_Bold', sans-serif;
+    margin-top: 20px;
+}
+.product-detail-hr{
+    background-color: #707070;
+    margin: 30px 0;
+}
+.product-detail-overview{
+    font: 18px 'Helvetica_Neu_Bold', sans-serif;
+}
+.product-detail-overview-desc{
+    color: #828284;
+    font: 14px 'HelveticaNeue', sans-serif;
+    line-height: 1.4;
+}
+.product-detail-hiw{
+    padding: 0;
+    list-style: none;
+    font: 11px 'HelveticaNeue', sans-serif;
+    line-height: 1.4;
+    color: #828284;
+}
+.product-detail-hiw li{
+    margin-bottom: 10px;
+}
+.may-like-title{
+    font: 14px 'Helvetica_Medium', sans-serif;
+    margin-bottom: 0;
+    border-bottom: 1px solid #707070;
 }

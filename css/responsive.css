@@ -27,7 +27,16 @@
     }
 }
 @media (max-width: 992px) {
-    .sm-px-15{
+    .desktop-view{
+        display: none;
+    }
+    .mobile-view-flex{
+        display: flex;
+    }
+    .mobile-view-block{
+        display: block;
+    }
+    .sm-px-15, .product-detail-row{
         padding:15px !important;
     }
     .sm-plr-15{
@@ -174,20 +183,6 @@
         grid-template-columns: repeat(3, minmax(0, 1fr));
         gap: 6px;
     }
-    /* .promo-text-wrap h1{
-        font: 16px 'Helvetica_Neu_Bold', sans-serif;
-    }
-    .promo-text-wrap .btn-promo-shop{
-        font: 10px 'Helvetica_Neu_Bold', sans-serif;
-        margin-top: 0;
-        padding: 3px 15px;
-    }
-    .promo-stars{
-        max-width: 25%;
-    }
-    .promo-feedback{
-        width: 30%;
-    } */
     .special-num-grid{
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -254,7 +249,7 @@
         display: none;
     }
     .company-category-tabs .best-seller-owl-carousel .item{
-        padding: 0 20px;
+        padding: 5px 20px;
     }
     .company-category-tabs .best-seller-owl-carousel .owl-prev {
         left: -8px !important;
@@ -295,6 +290,43 @@
     }
     .sm-dropdowns-container .product-drp-wrap{
         display: inline-block;
+    }
+    .comp-cat-pad{
+        padding: 15px 30px;
+    }
+    .sm-mt-30{
+        padding-top: 30px;
+    }
+    .sm-bg-gary{
+        background-color: #F2F3F6;
+    }
+    #all-phones .best-seller-carousel-container .owl-carousel .item{
+        background-color: #fff;
+    }
+    .button-container{
+        margin-top: 25px;
+    }
+    .btn-wrap{
+        margin-bottom: 12px;
+    }
+    .plus-minus-wrap{
+        width: 30%;
+        margin: 0 auto;
+    }
+    .plus-minus-wrap .h-25{
+        height: 25px !important;
+    }
+    .plus-minus-wrap button{
+        display: flex;
+        align-items: center;
+        color: #0C65FF;
+        font: 11px 'Helvetica_Neu_Bold', sans-serif;
+        border-color: #707070 !important;
+        border-radius: unset;
+    }
+    .plus-minus-wrap input{
+        font: 11px 'Helvetica_Neu_Bold', sans-serif;
+        border-color: #707070 !important;
     }
 }
 
