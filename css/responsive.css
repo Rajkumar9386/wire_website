@@ -13,7 +13,7 @@
     }
 }
 @media (max-width: 1255px) {
-    nav.navbar, .top-nav, .section-title-wrap, .company-logo-row, .best-seller-container,.brand-row{
+    nav.navbar, .top-nav, .section-title-wrap, .company-logo-row, .best-seller-container,.brand-row, .px-150-py-40{
         padding: 8px 30px;
     }
     .banner-carousel .carousel-caption{
@@ -33,7 +33,7 @@
     .mobile-view-flex{
         display: flex;
     }
-    .mobile-view-block{
+    .mobile-view-block, .mobile-view{
         display: block;
     }
     .sm-px-15, .product-detail-row{
@@ -327,6 +327,35 @@
     .plus-minus-wrap input{
         font: 11px 'Helvetica_Neu_Bold', sans-serif;
         border-color: #707070 !important;
+    }
+    .electronics-img-wrap{
+        padding: 25px 7px;
+    }
+    .px-150-py-40{
+        padding: 8px 15px;
+    }
+    .sm-px-15{
+        padding: 0 15px !important;
+    }
+    .sm-px-0{
+        padding: 10px 0px !important;
+    }
+    .sm-mb-15{
+        margin-bottom: 15px;
+    }
+    .lite-section-title{
+        font-size: 14px;
+        padding: 5px 15px;
+    }
+    .brand-page-mobile-logo-wrap .brand-box a img{
+        height: 100%;
+    }
+    .brand-page-mobile-logo-wrap .brand-box{
+        background: #fff !important;
+        border-bottom: none !important;
+    }
+    .brand-page-mobile-logo-wrap .brands-wrap .brand-box-line:not(:first-child)::after{
+        display: none;
     }
 }
 

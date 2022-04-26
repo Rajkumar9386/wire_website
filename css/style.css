@@ -71,7 +71,9 @@ body {
 .mr-10{
     margin-right: 10px;
 }
-
+.px-150-py-40{
+    padding: 40px 150px;
+}
 /* Top Navigation */
 .top-nav{
     padding: 8px 150px;
@@ -871,6 +873,7 @@ h6.product-title.tab-product-title {
     display: flex;
     border: 2px solid #F4F6F8;
     background-color: #fff;
+    position: relative;
 }
 .phones-card .best-seller-product-details{
     border: unset
@@ -918,7 +921,7 @@ h6.product-title.tab-product-title {
     font-size: 24px;
     text-decoration: line-through;
 }
-.product-detail-content-wrap .btn-dark{
+.product-detail-content-wrap .btn-dark, .product-detail-content-wrap .btn-primary{
     font-family: 'Helvetica_Neu_Bold', sans-serif;
     margin-top: 20px;
 }
@@ -948,4 +951,97 @@ h6.product-title.tab-product-title {
     font: 14px 'Helvetica_Medium', sans-serif;
     margin-bottom: 0;
     border-bottom: 1px solid #707070;
+}
+
+/* Electronics */
+.b-none{
+    border: none;
+}
+.electronic-fav-icon{
+    position: absolute;
+    right: 5px;
+    top: 0;
+}
+.electronics-img-wrap{
+    display: flex !important;
+    align-items: center;
+}
+.electronics-img-wrap img{
+    height: auto;
+}
+.electronic-card{
+    height: 90%;
+}
+
+/* Brands */
+.lite-section-title{
+    font: 18px 'HelveticaNeue', sans-serif;
+    padding: 15px;
+}
+.product-price-wrap.d-grid{
+    row-gap: 5px;
+}
+.mobile-brands-phones-card-container{
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    row-gap: 20px;
+}
+.mobile-brands-phones-card-container .best-seller-product-details{
+    border: none;
+}
+.mobile-brands-phones-card-container .best-seller-product-img-wrap{
+    background: #fff;
+}
+.mobile-brands-phones-card-container .best-seller-card{
+    position: relative;
+}
+.mobile-brands-phones-card-container .best-seller-card::after{
+    content: '';
+    position: absolute;
+    right: -5px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 95%;
+    background-color: #707070;
+}
+.mobile-brands-phones-card{
+    background: #707070;
+    opacity: 1;
+    margin: 5px 0;
+}
+.mobile-brands-phones-card-container .btn-dark{
+    font-size: 13px;
+}
+.brand-page-mobile-logo-wrap .brand-box{
+    padding: 0;
+    border: none;
+    border-bottom: 1.5px solid rgb(0 0 0 / 16%);
+    position: relative;
+}
+.brand-page-mobile-logo-wrap .brands-wrap .brand-box-line:not(:first-child)::after{
+    content: '';
+    position: absolute;
+    left: -8px;
+    top: 45%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 100%;
+    background-color: #707070;
+}
+.brand-page-mobile-logo-wrap .brand-box a{
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.brand-page-mobile-logo-wrap .brand-box a img{
+    width: auto;
+    height: auto;
+}
+.bb-none{
+    border-bottom: none !important;
 }
