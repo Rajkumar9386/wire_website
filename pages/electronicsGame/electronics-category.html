@@ -1,0 +1,803 @@
+<!doctype html>
+<html lang="en">
+<!-- <html lang="ar" dir="rtl"> -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/responsive.css">
+    <title>Wire Website</title>
+  </head>
+  <body>
+      <header>
+        <div class="top-nav bg-dark">
+            <div class="top-nav-element-wrap">
+                <img src="../../img/location.png" class="location-icon"/>
+                <div class="lang-drp-wrap">
+                    <div class="btn-group">
+                        <a href="#" class="top-nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="../../img/USA.png" class="country-icon"/>
+                        <span><span class="country-start-text">USA - </span>EN</span>
+                        <img src="../../img/ico_arrow.png" class="lang-drp-icon"/>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <img src="../../img/arab.png" class="country-icon"/>
+                                <span>AR - URDU</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="account-wrap">
+                    <img src="../../img/profile.png" class="profile-icon"/>
+                    <span>Account</span>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid p-0">
+                <a class="navbar-brand" href="#">
+                    <img src="../../img/d-logo.png" class="img-fluid"/>
+                </a>
+                <a href="#"><img src="../../img/mobile-profile.png" class="mobile-nav-icons"/></a>
+                <a href="#"><img src="../../img/mobile-fav.png"  class="mobile-nav-icons"/></a>
+                <a href="#"><img src="../../img/mobile-cart.png" class="mobile-nav-icons"/></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <img src="../../img/hamburger-icon.png" class="ham-icom">
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="mobile-nav-sub-top-menu">
+                        <div class="sm-lang-drp-wrap">
+                            <div class="btn-group">
+                                <a href="#" class="sm-top-nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="../../img/USA.png" class="country-icon"/>
+                                <span>USA - EN</span>
+                                <img src="../../img/ico_arrow.png" class="lang-drp-icon"/>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <img src="../../img/arab.png" class="country-icon"/>
+                                        <span>AR - URDU</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <a href="#" class="mr-10"><img src="../../img/location.png" class="location-icon"/></a>
+                        <a href="#" class="mr-10"><img src="../../img/profile.png" class="profile-icon"/></a>
+                        <a href="#" class="mr-10"><img src="../../img/home.png" class="profile-icon"/></a>
+                        <a href="#" class="main-text">Main</a>
+                    </div>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Companies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Brands</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Electronic Game</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Special Numbers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Internet Card</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Used Devices</a>
+                        </li>
+                        <li class="nav-item after-none">
+                            <a class="nav-link" href="#">Workshop</a>
+                        </li>
+                        <li class="nav-item after-none sm-d-none">
+                            <a class="nav-link nav-icon px-12-py-0" href="#">
+                                <img src="../../img/fav.png" class="fav-icon"/>
+                            </a>
+                        </li>
+                        <li class="nav-item after-none sm-d-none">
+                            <a class="nav-link nav-icon px-12-py-0" href="#">
+                                <img src="../../img/cart.png" class="cart-icon"/>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Automotive Accessories</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home Accessories</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Kid Toy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Celebrities</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Wire Store</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Competitions</a>
+                        </li>
+                        <li class="nav-item after-none">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item nav-search-wrap after-none sm-d-none">
+                            <input type="text" class="form-control nav-search" placeholder="SEARCH"/>
+                            <img src="../../img/search-icon.png" class="search-icon"/>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container-fluid">
+            <!-- Titlte -->
+            <div class="row">
+                <div class="col-md-12 p-0">
+                    <h3 class="section-title-wrap section-title-without-bg">
+                        <span>Electronic Game / GameDirex</span>
+                        <a href="electronics-game.html" class="back-link"><i class="fa fa-angle-double-left" aria-hidden="true"></i> Back</a>
+                    </h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 p-0">
+                    <div class="company-promo">
+                        <div class="brand-box">
+                            <img src="../../img/electronicGame/gameDirex.png" class="img-fluid"/>
+                        </div>
+                        <div class="promo-img">
+                            <img src="../../img/electronicGame/promo-banner.png" class="img-fluid"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 sm-px-15">
+                    <div class="video-container">
+                        <video width="100%" height="300px" class="video">
+                            <source src="http://e14aaeb709f7cde1ae68-a1d0a134a31b545b257b15f8a8ba5726.r70.cf3.rackcdn.com/projects/31432/1427815464209-bf74131a7528d0ea5ce8c0710f530bb5/1280x720.mp4" type="video/mp4">
+                          </video>
+                        <div class="playpause"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Electronics Game Desktop View -->
+            <div class="row sm-bg-gary desktop-view" id="phones">
+                <div class="col-md-12" id="all-phones">
+                    <div class="section-title-big-wrap">
+                        <h5 class="section-title-big">Product</h5>
+                        <div class="dropdowns-container lg-dropdowns-container eg-drp-wrap">
+                            <div class="dropdown-wrap">
+                                <div class="product-drp-wrap">
+                                    <label class="label-text">Sort by</label>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected disabled>Name - Price - Offer - Recommended</option>
+                                        <option value="1">Name</option>
+                                        <option value="2">Price</option>
+                                        <option value="3">Offer</option>
+                                        <option value="3">Recommended</option>
+                                    </select>
+                                </div>
+                                <div class="product-drp-wrap">
+                                    <label class="label-text">Card value</label>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected disabled>5 usd - 10 usd - 15 usd- 00000000000</option>
+                                        <option value="1">5 usd</option>
+                                        <option value="2">10 usd</option>
+                                        <option value="3">15 usd</option>
+                                        <option value="3">00000000000</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="all-phones-container electronicGame-category">
+                        <div class="row m-0">
+                            <div class="col-md-12 p-0">
+                                <div class="row desktop-view">
+                                    <div class="col-md-4">
+                                        <div class="best-seller-card phones-card">
+                                            <div class="best-seller-product-details">
+                                                <a href="product-detail.html">
+                                                    <h6 class="product-title">Call of Duty: Infinite Warfare - PC Game</h6>
+                                                    <p class="product-desc">Brand: PC Sku: 506474</p>
+                                                    <p class="product-desc-wran">Hurry! Only 2 left in stock.</p>
+                                                    <div class="product-price-wrap">
+                                                        <span class="product-discount-price">151.900 KD</span>
+                                                        <span class="product-actual-price">204.900 KD</span>
+                                                    </div>
+                                                </a>
+                                                <div class="product-button-wrap">
+                                                    <a href="#" class="btn btn-dark" type="button">Add to Cart</a>
+                                                    <img src="../../img/bestSeller/rating.png"/>
+                                                </div>
+                                            </div>
+                                            <a href="product-detail.html" class="best-seller-product-img-wrap">
+                                                <img src="../../img/electronicGame/cod.png" class="img-fluid"/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="best-seller-card phones-card">
+                                            <div class="best-seller-product-details">
+                                                <a href="product-detail.html">
+                                                    <h6 class="product-title">Company Of Heroes 2: Platinum Edition - PC Game</h6>
+                                                    <p class="product-desc">Brand: PC Sku: 503798</p>
+                                                    <p class="product-desc-wran">Hurry! Only 2 left in stock.</p>
+                                                    <div class="product-price-wrap">
+                                                        <span class="product-discount-price">122.500 KD</span>
+                                                        <span class="product-actual-price">164.900 KD</span>
+                                                    </div>
+                                                </a>
+                                                <div class="product-button-wrap">
+                                                    <a href="#" class="btn btn-dark" type="button">Add to Cart</a>
+                                                    <img src="../../img/bestSeller/rating.png"/>
+                                                </div>
+                                            </div>
+                                            <a href="product-detail.html" class="best-seller-product-img-wrap">
+                                                <img src="../../img/electronicGame/comp-heroes.png" class="img-fluid"/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="best-seller-card phones-card">
+                                            <div class="best-seller-product-details">
+                                                <a href="product-detail.html">
+                                                    <h6 class="product-title">PUBG Game Point - (12000 + Free 4200 UC)</h6>
+                                                    <p class="product-desc">Brand: PC Sku: 630985</p>
+                                                    <p class="product-desc-wran">Hurry! Only 2 left in stock.</p>
+                                                    <div class="product-price-wrap">
+                                                        <span class="product-discount-price">6.500 KD</span>
+                                                    </div>
+                                                </a>
+                                                <div class="product-button-wrap">
+                                                    <a href="#" class="btn btn-dark" type="button">Add to Cart</a>
+                                                    <img src="../../img/bestSeller/rating.png"/>
+                                                </div>
+                                            </div>
+                                            <a href="product-detail.html" class="best-seller-product-img-wrap">
+                                                <img src="../../img/electronicGame/pubg.png" class="img-fluid"/>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <div class="best-seller-card phones-card">
+                                            <div class="best-seller-product-details">
+                                                <a href="product-detail.html">
+                                                    <h6 class="product-title">Sony Apex Legends (1000 Coins)</h6>
+                                                    <p class="product-desc">Brand: APPLE Sku: 620930</p>
+                                                    <p class="product-desc-wran">Hurry! Only 2 left in stock.</p>
+                                                    <div class="product-price-wrap">
+                                                        <span class="product-discount-price">151.900 KD</span>
+                                                        <span class="product-actual-price">204.900 KD</span>
+                                                    </div>
+                                                </a>
+                                                <div class="product-button-wrap">
+                                                    <a href="#" class="btn btn-dark" type="button">Add to Cart</a>
+                                                    <img src="../../img/bestSeller/rating.png"/>
+                                                </div>
+                                            </div>
+                                            <a href="product-detail.html" class="best-seller-product-img-wrap">
+                                                <img src="../../img/electronicGame/apex.png" class="img-fluid"/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="best-seller-card phones-card">
+                                            <div class="best-seller-product-details">
+                                                <a href="product-detail.html">
+                                                    <h6 class="product-title">Sony FUT 22 – FIFA Points 2,200</h6>
+                                                    <p class="product-desc">Brand: APPLE Sku: 620929</p>
+                                                    <p class="product-desc-wran">Hurry! Only 2 left in stock.</p>
+                                                    <div class="product-price-wrap">
+                                                        <span class="product-discount-price">122.500 KD</span>
+                                                        <span class="product-actual-price">164.900 KD</span>
+                                                    </div>
+                                                </a>
+                                                <div class="product-button-wrap">
+                                                    <a href="#" class="btn btn-dark" type="button">Add to Cart</a>
+                                                    <img src="../../img/bestSeller/rating.png"/>
+                                                </div>
+                                            </div>
+                                            <a href="product-detail.html" class="best-seller-product-img-wrap">
+                                                <img src="../../img/electronicGame/fifa.png" class="img-fluid"/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="best-seller-card phones-card">
+                                            <div class="best-seller-product-details">
+                                                <a href="product-detail.html">
+                                                    <h6 class="product-title">World of Warcraft [EU] - 60Days - Prepaid Card</h6>
+                                                    <p class="product-desc">Brand: APPLE Sku: 620919</p>
+                                                    <p class="product-desc-wran">Hurry! Only 2 left in stock.</p>
+                                                    <div class="product-price-wrap">
+                                                        <span class="product-discount-price">6.500 KD</span>
+                                                    </div>
+                                                </a>
+                                                <div class="product-button-wrap">
+                                                    <a href="#" class="btn btn-dark" type="button">Add to Cart</a>
+                                                    <img src="../../img/bestSeller/rating.png"/>
+                                                </div>
+                                            </div>
+                                            <a href="product-detail.html" class="best-seller-product-img-wrap">
+                                                <img src="../../img/electronicGame/warcraft.png" class="img-fluid"/>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <div class="best-seller-card phones-card">
+                                            <div class="best-seller-product-details">
+                                                <a href="product-detail.html">
+                                                    <h6 class="product-title">Call of Duty: Infinite Warfare - PC Game</h6>
+                                                    <p class="product-desc">Brand: PC Sku: 506474</p>
+                                                    <p class="product-desc-wran">Hurry! Only 2 left in stock.</p>
+                                                    <div class="product-price-wrap">
+                                                        <span class="product-discount-price">151.900 KD</span>
+                                                        <span class="product-actual-price">204.900 KD</span>
+                                                    </div>
+                                                </a>
+                                                <div class="product-button-wrap">
+                                                    <a href="#" class="btn btn-dark" type="button">Add to Cart</a>
+                                                    <img src="../../img/bestSeller/rating.png"/>
+                                                </div>
+                                            </div>
+                                            <a href="product-detail.html" class="best-seller-product-img-wrap">
+                                                <img src="../../img/electronicGame/cod.png" class="img-fluid"/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="best-seller-card phones-card">
+                                            <div class="best-seller-product-details">
+                                                <a href="product-detail.html">
+                                                    <h6 class="product-title">Company Of Heroes 2: Platinum Edition - PC Game</h6>
+                                                    <p class="product-desc">Brand: PC Sku: 503798</p>
+                                                    <p class="product-desc-wran">Hurry! Only 2 left in stock.</p>
+                                                    <div class="product-price-wrap">
+                                                        <span class="product-discount-price">122.500 KD</span>
+                                                        <span class="product-actual-price">164.900 KD</span>
+                                                    </div>
+                                                </a>
+                                                <div class="product-button-wrap">
+                                                    <a href="#" class="btn btn-dark" type="button">Add to Cart</a>
+                                                    <img src="../../img/bestSeller/rating.png"/>
+                                                </div>
+                                            </div>
+                                            <a href="product-detail.html" class="best-seller-product-img-wrap">
+                                                <img src="../../img/electronicGame/comp-heroes.png" class="img-fluid"/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="best-seller-card phones-card">
+                                            <div class="best-seller-product-details">
+                                                <a href="product-detail.html">
+                                                    <h6 class="product-title">PUBG Game Point - (12000 + Free 4200 UC)</h6>
+                                                    <p class="product-desc">Brand: PC Sku: 630985</p>
+                                                    <p class="product-desc-wran">Hurry! Only 2 left in stock.</p>
+                                                    <div class="product-price-wrap">
+                                                        <span class="product-discount-price">6.500 KD</span>
+                                                    </div>
+                                                </a>
+                                                <div class="product-button-wrap">
+                                                    <a href="#" class="btn btn-dark" type="button">Add to Cart</a>
+                                                    <img src="../../img/bestSeller/rating.png"/>
+                                                </div>
+                                            </div>
+                                            <a href="product-detail.html" class="best-seller-product-img-wrap">
+                                                <img src="../../img/electronicGame/pubg.png" class="img-fluid"/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12 p-0 desktop-view">
+                                <nav aria-label="Page navigation" class="pagination-wrap">
+                                    <ul class="pagination justify-content-center">
+                                      <li class="page-item pagination-prev-wrap">
+                                        <img src="../../img/pagination-prev.png" class="pagination-prev pagination-icon"/>
+                                        <a class="page-link" href="#" tabindex="-1">Previous</a>
+                                      </li>
+                                      <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                      <li class="page-item"><a class="page-link sm-d-none" href="#">6</a></li>
+                                      <li class="page-item"><a class="page-link sm-d-none" href="#">7</a></li>
+                                      <li class="page-item"><a class="page-link sm-d-none" href="#">8</a></li>
+                                      <li class="page-item"><a class="page-link sm-d-none" href="#">9</a></li>
+                                      <li class="page-item"><a class="page-link sm-d-none" href="#">10</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">...</a></li>
+                                      <li class="page-item pagination-next-wrap">
+                                        <a class="page-link" href="#">Next</a>
+                                        <img src="../../img/pagination-next.png" class="pagination-next pagination-icon"/>
+                                      </li>
+                                    </ul>
+                                  </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Electronics Game Mobile View -->
+            <!-- Tabs -->
+            <div class="row tabs-bg mobile-view-flex">
+                <div class="col-md-12 p-0">
+                    <div class="nav-pills-container">
+                        <ul class="nav nav-pills nav-fill eg-category" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link phone-link" href="#">CATEGORY 1</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link electronics-link" href="#" role="tab">CATEGORY 2</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link accessories-link" href="#">CATEGORY 3</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row sm-bg-gary mobile-view-flex" id="phones">
+                <div class="col-md-12" id="all-phones">
+                    <div class="all-phones-container">
+                        <div class="row m-0">
+                            <div class="col-md-12 p-0">
+                                <div class="dropdowns-container sm-dropdowns-container">
+                                    <div class="dropdown-wrap">
+                                        <div class="product-drp-wrap">
+                                            <div class="btn-group">
+                                                <a href="#" class="sm-drp-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Sort By</a>
+                                                <ul class="dropdown-menu">
+                                                    <li>Name</li>
+                                                    <li>Price</li>
+                                                    <li>Offer</li>
+                                                    <li>Recommended</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="product-drp-wrap">
+                                            <div class="btn-group">
+                                                <a href="#" class="sm-drp-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Card Value</a>
+                                                <ul class="dropdown-menu">
+                                                    <li>5 USD/li>
+                                                    <li>10 USD</li>
+                                                    <li>15 USD</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="product-drp-wrap">
+                                            <div class="btn-group">
+                                                <a href="#" class="sm-drp-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Game Name</a>
+                                                <ul class="dropdown-menu">
+                                                    <li>PUBG</li>
+                                                    <li>Call of Duty</li>
+                                                    <li>Company Heroes</li>
+                                                    <li>Fifa</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12 p-0">
+                                <div class="row mobile-view-flex">
+                                    <div class="best-seller-carousel-container comp-cat-pad">
+                                        <div class="best-seller-owl-carousel owl-carousel owl-theme">
+                                            <div class="item">
+                                                <div class="best-seller-card">
+                                                    <a href="product-detail.html" class="best-seller-product-img-wrap">
+                                                        <img src="../../img/electronicGame/cod.png" class="img-fluid"/>
+                                                    </a>
+                                                    <div class="best-seller-product-details">
+                                                        <a href="product-detail.html">
+                                                            <h6 class="product-title">Call of Duty: Infinite Warfare - PC Game</h6>
+                                                            <p class="product-desc">Code : 123456</p>
+                                                            <p class="product-desc-wran">Hurry! Only 2 left in stock.</p>
+                                                            <div class="product-price-wrap">
+                                                                <span class="product-discount-price">151.000 KD</span>
+                                                            </div>
+                                                        </a>
+                                                        <div class="product-button-wrap">
+                                                            <a href="#" class="btn btn-dark" type="button">Add to Cart</a>
+                                                            <img src="../../img/bestSeller/rating.png"/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="best-seller-card">
+                                                    <a href="product-detail.html" class="best-seller-product-img-wrap">
+                                                        <img src="../../img/electronicGame/comp-heroes.png" class="img-fluid"/>
+                                                    </a>
+                                                    <div class="best-seller-product-details">
+                                                        <a href="product-detail.html">
+                                                            <h6 class="product-title">Company Of Heroes 2: Platinum Edition - PC Game                                                            </h6>
+                                                            <p class="product-desc">Code : 123456</p>
+                                                            <p class="product-desc-wran">Hurry! Only 2 left in stock.</p>
+                                                            <div class="product-price-wrap">
+                                                                <span class="product-discount-price">122.000 KD</span>
+                                                                <span class="product-actual-price">164.900 KD</span>
+                                                            </div>
+                                                        </a>
+                                                        <div class="product-button-wrap">
+                                                            <a href="#" class="btn btn-dark" type="button">Add to Cart</a>
+                                                            <img src="../../img/bestSeller/rating.png"/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="best-seller-card">
+                                                    <a href="product-detail.html" class="best-seller-product-img-wrap">
+                                                        <img src="../../img/electronicGame/pubg.png" class="img-fluid"/>
+                                                    </a>
+                                                    <div class="best-seller-product-details">
+                                                        <a href="product-detail.html">
+                                                            <h6 class="product-title">PUBG Game Point - (12000 + Free 4200 UC)                                                            </h6>
+                                                            <p class="product-desc">Code : 123456</p>
+                                                            <p class="product-desc-wran">Hurry! Only 2 left in stock.</p>
+                                                            <div class="product-price-wrap">
+                                                                <span class="product-discount-price">6.000 KD</span>
+                                                            </div>
+                                                        </a>
+                                                        <div class="product-button-wrap">
+                                                            <a href="#" class="btn btn-dark" type="button">Add to Cart</a>
+                                                            <img src="../../img/bestSeller/rating.png"/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="item">
+                                                <div class="best-seller-card">
+                                                    <a href="product-detail.html" class="best-seller-product-img-wrap">
+                                                        <img src="../../img/electronicGame/cod.png" class="img-fluid"/>
+                                                    </a>
+                                                    <div class="best-seller-product-details">
+                                                        <a href="product-detail.html">
+                                                            <h6 class="product-title">Call of Duty: Infinite Warfare - PC Game</h6>
+                                                            <p class="product-desc">Code : 123456</p>
+                                                            <p class="product-desc-wran">Hurry! Only 2 left in stock.</p>
+                                                            <div class="product-price-wrap">
+                                                                <span class="product-discount-price">151.000 KD</span>
+                                                            </div>
+                                                        </a>
+                                                        <div class="product-button-wrap">
+                                                            <a href="#" class="btn btn-dark" type="button">Add to Cart</a>
+                                                            <img src="../../img/bestSeller/rating.png"/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="best-seller-card">
+                                                    <a href="product-detail.html" class="best-seller-product-img-wrap">
+                                                        <img src="../../img/electronicGame/comp-heroes.png" class="img-fluid"/>
+                                                    </a>
+                                                    <div class="best-seller-product-details">
+                                                        <a href="product-detail.html">
+                                                            <h6 class="product-title">Company Of Heroes 2: Platinum Edition - PC Game                                                            </h6>
+                                                            <p class="product-desc">Code : 123456</p>
+                                                            <p class="product-desc-wran">Hurry! Only 2 left in stock.</p>
+                                                            <div class="product-price-wrap">
+                                                                <span class="product-discount-price">122.000 KD</span>
+                                                                <span class="product-actual-price">164.900 KD</span>
+                                                            </div>
+                                                        </a>
+                                                        <div class="product-button-wrap">
+                                                            <a href="#" class="btn btn-dark" type="button">Add to Cart</a>
+                                                            <img src="../../img/bestSeller/rating.png"/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="best-seller-card">
+                                                    <a href="product-detail.html" class="best-seller-product-img-wrap">
+                                                        <img src="../../img/electronicGame/pubg.png" class="img-fluid"/>
+                                                    </a>
+                                                    <div class="best-seller-product-details">
+                                                        <a href="product-detail.html">
+                                                            <h6 class="product-title">PUBG Game Point - (12000 + Free 4200 UC)                                                            </h6>
+                                                            <p class="product-desc">Code : 123456</p>
+                                                            <p class="product-desc-wran">Hurry! Only 2 left in stock.</p>
+                                                            <div class="product-price-wrap">
+                                                                <span class="product-discount-price">6.000 KD</span>
+                                                            </div>
+                                                        </a>
+                                                        <div class="product-button-wrap">
+                                                            <a href="#" class="btn btn-dark" type="button">Add to Cart</a>
+                                                            <img src="../../img/bestSeller/rating.png"/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12 p-0 desktop-view">
+                                <nav aria-label="Page navigation" class="pagination-wrap">
+                                    <ul class="pagination justify-content-center">
+                                      <li class="page-item pagination-prev-wrap">
+                                        <img src="../../img/pagination-prev.png" class="pagination-prev pagination-icon"/>
+                                        <a class="page-link" href="#" tabindex="-1">Previous</a>
+                                      </li>
+                                      <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                      <li class="page-item"><a class="page-link sm-d-none" href="#">6</a></li>
+                                      <li class="page-item"><a class="page-link sm-d-none" href="#">7</a></li>
+                                      <li class="page-item"><a class="page-link sm-d-none" href="#">8</a></li>
+                                      <li class="page-item"><a class="page-link sm-d-none" href="#">9</a></li>
+                                      <li class="page-item"><a class="page-link sm-d-none" href="#">10</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">...</a></li>
+                                      <li class="page-item pagination-next-wrap">
+                                        <a class="page-link" href="#">Next</a>
+                                        <img src="../../img/pagination-next.png" class="pagination-next pagination-icon"/>
+                                      </li>
+                                    </ul>
+                                  </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Promo Banner -->
+            <div class="row sm-mt-30 sm-bg-gary">
+                <div class="col-md-12 p-0">
+                    <div class="promo-shop-section-container">
+                        <a href="#">
+                            <img src="../../img/electronicGame/promo-banner2.png" class="promo-stars img-fluid"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 p-0">
+                    <img src="../../img/footer-img.png"  class="footer-img img-fluid sm-none"/>
+                    <img src="../../img/sm-footer-img.png"  class="footer-img img-fluid lg-none"/>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="row">
+                    <div class="col-md-2 center-align">
+                        <img src="../../img/footer-logo.png" class="footer-logo img-fluid"/>
+                        <div class="sm-footer-input-container">
+                            <div class="footer-email-input">
+                                <input type="email" class="form-control" placeholder="Email"/>
+                                <img src="../../img/send.png" class="email-send"/>
+                            </div>
+                            <p class="stay-in-touch-text">Stay in touch with us for the freshest products!</p>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="footer-links">
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Companies</a></li>
+                                <li><a href="#">Brands</a></li>
+                                <li><a href="#">Electronic Game</a></li>
+                                <li><a href="#">Special Numbers</a></li>
+                                <li><a href="#">Internet Card</a></li>
+                                <li><a href="#">Used Devices</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">Workshop</a></li>
+                                <li><a href="#">Automotive</a></li>
+                                <li><a href="#">Home Accessories</a></li>
+                                <li><a href="#">Kid Toy</a></li>
+                                <li><a href="#">Celebrities</a></li>
+                                <li><a href="#">Wire Store</a></li>
+                                <li><a href="#">Competitions</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Help</a></li>
+                                <li><a href="#">Terms</a></li>
+                                <li><a href="#">Guidlines</a></li>
+                                <li><a href="#">Advertise</a></li>
+                                <li><a href="#">Integrations</a></li>
+                                <li><a href="#">Careers</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footer-input-container">
+                            <div class="footer-email-input">
+                                <input type="email" class="form-control" placeholder="Email"/>
+                                <img src="../../img/send.png" class="email-send"/>
+                            </div>
+                            <p class="stay-in-touch-text">Stay in touch with us for the freshest products!</p>
+                            <p class="copyright-text">Ⓒ 2022, Wire Site. Power by Software Silo</p>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="social-icon-wrap">
+                            <img src="../../img/instagram.png" class="insta-icon"/>
+                            <img src="../../img/twitter.png" class="twitter-icon"/>
+                            <img src="../../img/facebook.png" class="facebook-icon"/>
+                            <img src="../../img/web.png" class="web-icon"/>
+                        </div>
+                        <p class="sm-copyright-text">Ⓒ 2022, Wire Site. Power by Software Silo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $(".navbar-toggler").click(function(){
+            $("body").toggleClass("active");
+        });
+    </script>
+    <script>
+        // Best Seller Carousel
+        $('.best-seller-owl-carousel ').owlCarousel({
+            loop:true,
+            // autoplay:true,
+            items: 4,
+            margin:70,
+            nav:true,
+            autoHeight: true,
+            navText : ['<i class="fa fa-angle-double-left" aria-hidden="true"></i>','<i class="fa fa-angle-double-right" aria-hidden="true"></i>'],
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:1
+                },
+                1000:{
+                    items:3
+                }
+            }
+        })
+    </script>
+    <script>
+        // Video
+        $('.video').parent().click(function () {
+            if($(this).children(".video").get(0).paused){        
+                $(this).children(".video").get(0).play();   
+                $(this).children(".playpause").hide();
+            } else {       
+                $(this).children(".video").get(0).pause();
+                $(this).children(".playpause").show();
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,5 +1,5 @@
 @media (max-width: 1415px) {
-    nav.navbar, .top-nav{
+    nav.navbar, .top-nav, #special-number-row, .special-number-big{
         padding: 8px 70px;
     }
     .banner-carousel .carousel-caption{
@@ -13,7 +13,7 @@
     }
 }
 @media (max-width: 1255px) {
-    nav.navbar, .top-nav, .section-title-wrap, .company-logo-row, .best-seller-container,.brand-row, .px-150-py-40{
+    nav.navbar, .top-nav, .section-title-wrap, .company-logo-row, .best-seller-container,.brand-row, .px-150-py-40, #special-number-row, .special-number-big{
         padding: 8px 30px;
     }
     .banner-carousel .carousel-caption{
@@ -239,6 +239,9 @@
         gap: 15px;
         justify-content: center;
     }
+    .tabs-bg .nav-pills-container .eg-category.nav-fill{
+        gap: 10px;
+    }
     .company-category-tabs{
         padding: 0px 15px;
     }
@@ -356,6 +359,45 @@
     }
     .brand-page-mobile-logo-wrap .brands-wrap .brand-box-line:not(:first-child)::after{
         display: none;
+    }
+    .s-numbers-list{
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 10px;
+        row-gap: 15px;
+        margin-top: 10px;
+    }
+    .s-number-link, .s-number-link2, .align-item-center-wrap .btn, .company-input-label, .company-input, .company-textarea, .price-label{
+        font-size: 13px;
+    }
+    .special-number-row .dropdown-wrap{
+        text-align: center;
+    }
+    .special-number-big .s-number-link{
+        margin: 20px 0;
+        letter-spacing: 3px;
+    }
+    .sc-numbers-list{
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 10px;
+        row-gap: 10px;
+    }
+    .align-item-center-wrap{
+        display: grid;
+        row-gap: 10px;
+    }
+    .sn-num-img{
+        width: 50%;
+    }
+    .sn-price-wrap{
+        display: grid;
+    }
+    .sn-price{
+        font-size: 26px;
+    }
+    .other-label {
+        font-size: 13px;
+        border-bottom: 1px solid #707070;
+        margin-bottom: 10px;
     }
 }
 
