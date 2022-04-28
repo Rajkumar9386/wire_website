@@ -1,0 +1,746 @@
+<!doctype html>
+<html lang="en">
+<!-- <html lang="ar" dir="rtl"> -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/responsive.css">
+    <title>Wire Website</title>
+  </head>
+  <body>
+      <header>
+        <div class="top-nav bg-dark">
+            <div class="top-nav-element-wrap">
+                <img src="../../img/location.png" class="location-icon"/>
+                <div class="lang-drp-wrap">
+                    <div class="btn-group">
+                        <a href="#" class="top-nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="../../img/USA.png" class="country-icon"/>
+                        <span><span class="country-start-text">USA - </span>EN</span>
+                        <img src="../../img/ico_arrow.png" class="lang-drp-icon"/>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <img src="../../img/arab.png" class="country-icon"/>
+                                <span>AR - URDU</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="account-wrap">
+                    <img src="../../img/profile.png" class="profile-icon"/>
+                    <span>Account</span>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid p-0">
+                <a class="navbar-brand" href="#">
+                    <img src="../../img/d-logo.png" class="img-fluid"/>
+                </a>
+                <a href="#"><img src="../../img/mobile-profile.png" class="mobile-nav-icons"/></a>
+                <a href="#"><img src="../../img/mobile-fav.png"  class="mobile-nav-icons"/></a>
+                <a href="#"><img src="../../img/mobile-cart.png" class="mobile-nav-icons"/></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <img src="../../img/hamburger-icon.png" class="ham-icom">
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="mobile-nav-sub-top-menu">
+                        <div class="sm-lang-drp-wrap">
+                            <div class="btn-group">
+                                <a href="#" class="sm-top-nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="../../img/USA.png" class="country-icon"/>
+                                <span>USA - EN</span>
+                                <img src="../../img/ico_arrow.png" class="lang-drp-icon"/>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <img src="../../img/arab.png" class="country-icon"/>
+                                        <span>AR - URDU</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <a href="#" class="mr-10"><img src="../../img/location.png" class="location-icon"/></a>
+                        <a href="#" class="mr-10"><img src="../../img/profile.png" class="profile-icon"/></a>
+                        <a href="#" class="mr-10"><img src="../../img/home.png" class="profile-icon"/></a>
+                        <a href="#" class="main-text">Main</a>
+                    </div>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Companies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Brands</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Electronic Game</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Special Numbers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Internet Card</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Used Devices</a>
+                        </li>
+                        <li class="nav-item after-none">
+                            <a class="nav-link" href="#">Workshop</a>
+                        </li>
+                        <li class="nav-item after-none sm-d-none">
+                            <a class="nav-link nav-icon px-12-py-0" href="#">
+                                <img src="../../img/fav.png" class="fav-icon"/>
+                            </a>
+                        </li>
+                        <li class="nav-item after-none sm-d-none">
+                            <a class="nav-link nav-icon px-12-py-0" href="#">
+                                <img src="../../img/cart.png" class="cart-icon"/>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Automotive Accessories</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home Accessories</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Kid Toy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Celebrities</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Wire Store</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Competitions</a>
+                        </li>
+                        <li class="nav-item after-none">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item nav-search-wrap after-none sm-d-none">
+                            <input type="text" class="form-control nav-search" placeholder="SEARCH"/>
+                            <img src="../../img/search-icon.png" class="search-icon"/>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container-fluid">
+            <!-- Banner Carousel -->
+            <div class="row">
+                <div class="col-md-12 p-0">
+                    <h3 class="section-title-wrap">
+                        <span>Internet Cards</span>
+                        <a href="../../index.html" class="back-link"><i class="fa fa-angle-double-left" aria-hidden="true"></i> Back</a>
+                    </h3>
+                    <div id="bannerCarousel" class="carousel slide banner-carousel otherPage-Carousel" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                            <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="../../img/banner-placeholder.png" class="img-fluid" alt="Banner 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../../img/banner-placeholder.png" class="img-fluid" alt="Banner 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../../img/banner-placeholder.png" class="img-fluid" alt="Banner 3">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../../img/banner-placeholder.png" class="img-fluid" alt="Banner 4">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../../img/banner-placeholder.png" class="img-fluid" alt="Banner 5">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../../img/banner-placeholder.png" class="img-fluid" alt="Banner 6">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Internet Cards -->
+            <div class="row">
+                <div class="col-md-12 p-0">
+                    <div class="internet-card-container internet-card-landing-page px-150-py-40">
+                        <div class="internet-card-wrap">
+                            <div class="internet-card-box">
+                                <a href="internet-card-category.html"><img src="../../img/internetCards/itunes01.png" class="img-fluid"/></a>
+                            </div>
+                            <div class="internet-card-box">
+                                <a href="internet-card-category.html"><img src="../../img/internetCards/microsoft01.png" class="img-fluid"/></a>
+                            </div>
+                        </div>
+                        <div class="internet-card-wrap">
+                            <div class="internet-card-box">
+                                <a href="internet-card-category.html"><img src="../../img/internetCards/googlePlay01.png" class="img-fluid"/></a>
+                            </div>
+                            <div class="internet-card-box">
+                                <a href="internet-card-category.html"><img src="../../img/internetCards/mcAfee01.png" class="img-fluid"/></a>
+                            </div>
+                        </div>
+                        <div class="internet-card-wrap">
+                            <div class="internet-card-box">
+                                <a href="internet-card-category.html"><img src="../../img/internetCards/playStation01.png" class="img-fluid"/></a>
+                            </div>
+                            <div class="internet-card-box">
+                                <a href="internet-card-category.html"><img src="../../img/internetCards/gaming01.png" class="img-fluid"/></a>
+                            </div>
+                        </div>
+                        <div class="internet-card-wrap">
+                            <div class="internet-card-box">
+                                <a href="internet-card-category.html"><img src="../../img/internetCards/xBox01.png" class="img-fluid"/></a>
+                            </div>
+                            <div class="internet-card-box">
+                                <a href="internet-card-category.html"><img src="../../img/internetCards/subscription01.png" class="img-fluid"/></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sm-internet-card-container internet-card-landing-page">
+                        <div class="internet-card-wrap">
+                            <div class="internet-card-box">
+                                <a href="internet-card-category.html"><img src="../../img/internetCards/itunes01.png" class="img-fluid"/></a>
+                            </div>
+                            <div class="internet-card-box">
+                                <a href="internet-card-category.html"><img src="../../img/internetCards/microsoft01.png" class="img-fluid"/></a>
+                            </div>
+                            <div class="internet-card-box">
+                                <a href="internet-card-category.html"><img src="../../img/internetCards/googlePlay01.png" class="img-fluid"/></a>
+                            </div>
+                            <div class="internet-card-box">
+                                <a href="internet-card-category.html"><img src="../../img/internetCards/mcAfee01.png" class="img-fluid"/></a>
+                            </div>
+                            <div class="internet-card-box">
+                                <a href="internet-card-category.html"><img src="../../img/internetCards/playStation01.png" class="img-fluid"/></a>
+                            </div>
+                            <div class="internet-card-box">
+                                <a href="internet-card-category.html"><img src="../../img/internetCards/gaming01.png" class="img-fluid"/></a>
+                            </div>
+                            <div class="internet-card-box">
+                                <a href="internet-card-category.html"><img src="../../img/internetCards/xBox01.png" class="img-fluid"/></a>
+                            </div>
+                            <div class="internet-card-box">
+                                <a href="internet-card-category.html"><img src="../../img/internetCards/subscription01.png" class="img-fluid"/></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Electronics Game Desktop View -->
+            <div class="row sm-bg-gary desktop-view" id="phones">
+                <div class="col-md-12" id="all-phones">
+                    <div class="section-title-big-wrap">
+                        <h5 class="section-title-big">
+                            <img src="../../img/internetCards/iTunes02.png" class="img-fluid"/>
+                        </h5>
+                        <div class="dropdowns-container lg-dropdowns-container eg-drp-wrap">
+                            <div class="dropdown-wrap">
+                                <div class="product-drp-wrap">
+                                    <label class="label-text">Sort by</label>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected disabled>Name - Price - Offer - Recommended</option>
+                                        <option value="1">Name</option>
+                                        <option value="2">Price</option>
+                                        <option value="3">Offer</option>
+                                        <option value="3">Recommended</option>
+                                    </select>
+                                </div>
+                                <div class="product-drp-wrap">
+                                    <label class="label-text">Card value</label>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected disabled>5 usd - 10 usd - 15 usd- 00000000000</option>
+                                        <option value="1">5 usd</option>
+                                        <option value="2">10 usd</option>
+                                        <option value="3">15 usd</option>
+                                        <option value="3">00000000000</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="all-phones-container electronicGame-category internet-card-category-wrapper">
+                        <div class="row m-0">
+                            <div class="col-md-12 p-0">
+                                <div class="row desktop-view">
+                                    <div class="col-md-4">
+                                        <div class="best-seller-card phones-card">
+                                            <div class="best-seller-product-details">
+                                                <a href="product-detail.html">
+                                                    <h6 class="product-title">Apple iTunes Gift Card $500 (U.S. Account)</h6>
+                                                    <p class="product-desc">Brand: APPLE Sku: 620930</p>
+                                                    <div class="product-price-wrap">
+                                                        <span class="product-discount-price">151.900 KD</span>
+                                                        <span class="product-actual-price">204.900 KD</span>
+                                                    </div>
+                                                </a>
+                                                <div class="product-button-wrap">
+                                                    <a href="#" class="btn btn-dark" type="button">Add to Cart</a>
+                                                    <img src="../../img/bestSeller/rating.png"/>
+                                                </div>
+                                            </div>
+                                            <a href="product-detail.html" class="best-seller-product-img-wrap">
+                                                <img src="../../img/internetCards/iTunesGiftCard500.png" class="img-fluid"/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="best-seller-card phones-card">
+                                            <div class="best-seller-product-details">
+                                                <a href="product-detail.html">
+                                                    <h6 class="product-title">Apple iTunes Gift Card $400 (U.S. Account)</h6>
+                                                    <p class="product-desc">Brand: APPLE Sku: 620929</p>
+                                                    <div class="product-price-wrap">
+                                                        <span class="product-discount-price">122.500 KD</span>
+                                                        <span class="product-actual-price">164.900 KD</span>
+                                                    </div>
+                                                </a>
+                                                <div class="product-button-wrap">
+                                                    <a href="#" class="btn btn-dark" type="button">Add to Cart</a>
+                                                    <img src="../../img/bestSeller/rating.png"/>
+                                                </div>
+                                            </div>
+                                            <a href="product-detail.html" class="best-seller-product-img-wrap">
+                                                <img src="../../img/internetCards/iTunesGiftCard400.png" class="img-fluid"/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="best-seller-card phones-card">
+                                            <div class="best-seller-product-details">
+                                                <a href="product-detail.html">
+                                                    <h6 class="product-title">Apple iTunes Gift Card $20 (U.S. Account)</h6>
+                                                    <p class="product-desc">Brand: APPLE Sku: 620919</p>
+                                                    <div class="product-price-wrap">
+                                                        <span class="product-discount-price">6.500 KD</span>
+                                                    </div>
+                                                </a>
+                                                <div class="product-button-wrap">
+                                                    <a href="#" class="btn btn-dark" type="button">Add to Cart</a>
+                                                    <img src="../../img/bestSeller/rating.png"/>
+                                                </div>
+                                            </div>
+                                            <a href="product-detail.html" class="best-seller-product-img-wrap">
+                                                <img src="../../img/internetCards/iTunesGiftCard20.png" class="img-fluid"/>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <div class="best-seller-card phones-card">
+                                            <div class="best-seller-product-details">
+                                                <a href="product-detail.html">
+                                                    <h6 class="product-title">Apple iTunes Gift Card $500 (U.S. Account)</h6>
+                                                    <p class="product-desc">Brand: APPLE Sku: 620930</p>
+                                                    <div class="product-price-wrap">
+                                                        <span class="product-discount-price">151.900 KD</span>
+                                                        <span class="product-actual-price">204.900 KD</span>
+                                                    </div>
+                                                </a>
+                                                <div class="product-button-wrap">
+                                                    <a href="#" class="btn btn-dark" type="button">Add to Cart</a>
+                                                    <img src="../../img/bestSeller/rating.png"/>
+                                                </div>
+                                            </div>
+                                            <a href="product-detail.html" class="best-seller-product-img-wrap">
+                                                <img src="../../img/internetCards/iTunesGiftCard500.png" class="img-fluid"/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="best-seller-card phones-card">
+                                            <div class="best-seller-product-details">
+                                                <a href="product-detail.html">
+                                                    <h6 class="product-title">Apple iTunes Gift Card $400 (U.S. Account)</h6>
+                                                    <p class="product-desc">Brand: APPLE Sku: 620929</p>
+                                                    <div class="product-price-wrap">
+                                                        <span class="product-discount-price">122.500 KD</span>
+                                                        <span class="product-actual-price">164.900 KD</span>
+                                                    </div>
+                                                </a>
+                                                <div class="product-button-wrap">
+                                                    <a href="#" class="btn btn-dark" type="button">Add to Cart</a>
+                                                    <img src="../../img/bestSeller/rating.png"/>
+                                                </div>
+                                            </div>
+                                            <a href="product-detail.html" class="best-seller-product-img-wrap">
+                                                <img src="../../img/internetCards/iTunesGiftCard400.png" class="img-fluid"/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="best-seller-card phones-card">
+                                            <div class="best-seller-product-details">
+                                                <a href="product-detail.html">
+                                                    <h6 class="product-title">Apple iTunes Gift Card $20 (U.S. Account)</h6>
+                                                    <p class="product-desc">Brand: APPLE Sku: 620919</p>
+                                                    <div class="product-price-wrap">
+                                                        <span class="product-discount-price">6.500 KD</span>
+                                                    </div>
+                                                </a>
+                                                <div class="product-button-wrap">
+                                                    <a href="#" class="btn btn-dark" type="button">Add to Cart</a>
+                                                    <img src="../../img/bestSeller/rating.png"/>
+                                                </div>
+                                            </div>
+                                            <a href="product-detail.html" class="best-seller-product-img-wrap">
+                                                <img src="../../img/internetCards/iTunesGiftCard20.png" class="img-fluid"/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12 p-0 desktop-view">
+                                <nav aria-label="Page navigation" class="pagination-wrap">
+                                    <ul class="pagination justify-content-center">
+                                      <li class="page-item pagination-prev-wrap">
+                                        <img src="../../img/pagination-prev.png" class="pagination-prev pagination-icon"/>
+                                        <a class="page-link" href="#" tabindex="-1">Previous</a>
+                                      </li>
+                                      <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                      <li class="page-item"><a class="page-link sm-d-none" href="#">6</a></li>
+                                      <li class="page-item"><a class="page-link sm-d-none" href="#">7</a></li>
+                                      <li class="page-item"><a class="page-link sm-d-none" href="#">8</a></li>
+                                      <li class="page-item"><a class="page-link sm-d-none" href="#">9</a></li>
+                                      <li class="page-item"><a class="page-link sm-d-none" href="#">10</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">...</a></li>
+                                      <li class="page-item pagination-next-wrap">
+                                        <a class="page-link" href="#">Next</a>
+                                        <img src="../../img/pagination-next.png" class="pagination-next pagination-icon"/>
+                                      </li>
+                                    </ul>
+                                  </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Electronics Game Mobile View -->
+            <div class="row sm-bg-gary mobile-view-flex" id="phones">
+                <div class="col-md-12" id="all-phones">
+                    <div class="all-phones-container">
+                        <div class="row m-0">
+                            <div class="col-md-12 p-0">
+                                <div class="dropdowns-container sm-dropdowns-container internet-cards-drp">
+                                    <div class="dropdown-wrap">
+                                        <div class="product-drp-wrap">
+                                            <div class="btn-group">
+                                                <a href="#" class="sm-drp-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Sort By</a>
+                                                <ul class="dropdown-menu">
+                                                    <li>Name</li>
+                                                    <li>Price</li>
+                                                    <li>Offer</li>
+                                                    <li>Recommended</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="product-drp-wrap text-center">
+                                            <a href="#" class="sm-drp-link"><img src="../../img/internetCards/content-filter.png" class="img-fluid"/> </a>
+                                        </div>
+                                        <div class="product-drp-wrap">
+                                            <div class="btn-group">
+                                                <a href="#" class="sm-drp-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Card Value</a>
+                                                <ul class="dropdown-menu">
+                                                    <li>5 USD/li>
+                                                    <li>10 USD</li>
+                                                    <li>15 USD</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12 p-0">
+                                <div class="row mobile-view-flex internet-card-category-wrapper">
+                                    <!-- <div class="best-seller-carousel-container comp-cat-pad"> -->
+                                        <!-- <div class="best-seller-owl-carousel owl-carousel owl-theme"> -->
+                                            <div class="item">
+                                                <div class="best-seller-card phones-card mt-2 mb-2">
+                                                    <div class="best-seller-product-details">
+                                                        <a href="product-detail.html">
+                                                            <h6 class="product-title">Apple iTunes Gift Card $400 (U.S. Account)</h6>
+                                                            <p class="product-desc">Brand: APPLE Sku: 620929</p>
+                                                            <div class="product-price-wrap">
+                                                                <span class="product-discount-price">122.500 KD</span>
+                                                                <span class="product-actual-price">164.900 KD</span>
+                                                            </div>
+                                                        </a>
+                                                        <div class="product-button-wrap">
+                                                            <a href="#" class="btn btn-dark" type="button">Add to Cart</a>
+                                                            <img src="../../img/bestSeller/rating.png"/>
+                                                        </div>
+                                                    </div>
+                                                    <a href="product-detail.html" class="best-seller-product-img-wrap">
+                                                        <img src="../../img/internetCards/iTunesGiftCard400.png" class="img-fluid"/>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="best-seller-card phones-card mt-2 mb-2">
+                                                    <div class="best-seller-product-details">
+                                                        <a href="product-detail.html">
+                                                            <h6 class="product-title">Apple iTunes Gift Card $400 (U.S. Account)</h6>
+                                                            <p class="product-desc">Brand: APPLE Sku: 620929</p>
+                                                            <div class="product-price-wrap">
+                                                                <span class="product-discount-price">122.500 KD</span>
+                                                                <span class="product-actual-price">164.900 KD</span>
+                                                            </div>
+                                                        </a>
+                                                        <div class="product-button-wrap">
+                                                            <a href="#" class="btn btn-dark" type="button">Add to Cart</a>
+                                                            <img src="../../img/bestSeller/rating.png"/>
+                                                        </div>
+                                                    </div>
+                                                    <a href="product-detail.html" class="best-seller-product-img-wrap">
+                                                        <img src="../../img/internetCards/iTunesGiftCard400.png" class="img-fluid"/>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="best-seller-card phones-card mt-2 mb-2">
+                                                    <div class="best-seller-product-details">
+                                                        <a href="product-detail.html">
+                                                            <h6 class="product-title">Apple iTunes Gift Card $400 (U.S. Account)</h6>
+                                                            <p class="product-desc">Brand: APPLE Sku: 620929</p>
+                                                            <div class="product-price-wrap">
+                                                                <span class="product-discount-price">122.500 KD</span>
+                                                                <span class="product-actual-price">164.900 KD</span>
+                                                            </div>
+                                                        </a>
+                                                        <div class="product-button-wrap">
+                                                            <a href="#" class="btn btn-dark" type="button">Add to Cart</a>
+                                                            <img src="../../img/bestSeller/rating.png"/>
+                                                        </div>
+                                                    </div>
+                                                    <a href="product-detail.html" class="best-seller-product-img-wrap">
+                                                        <img src="../../img/internetCards/iTunesGiftCard400.png" class="img-fluid"/>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="best-seller-card phones-card mt-2 mb-2">
+                                                    <div class="best-seller-product-details">
+                                                        <a href="product-detail.html">
+                                                            <h6 class="product-title">Apple iTunes Gift Card $400 (U.S. Account)</h6>
+                                                            <p class="product-desc">Brand: APPLE Sku: 620929</p>
+                                                            <div class="product-price-wrap">
+                                                                <span class="product-discount-price">122.500 KD</span>
+                                                                <span class="product-actual-price">164.900 KD</span>
+                                                            </div>
+                                                        </a>
+                                                        <div class="product-button-wrap">
+                                                            <a href="#" class="btn btn-dark" type="button">Add to Cart</a>
+                                                            <img src="../../img/bestSeller/rating.png"/>
+                                                        </div>
+                                                    </div>
+                                                    <a href="product-detail.html" class="best-seller-product-img-wrap">
+                                                        <img src="../../img/internetCards/iTunesGiftCard400.png" class="img-fluid"/>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="best-seller-card phones-card mt-2 mb-2">
+                                                    <div class="best-seller-product-details">
+                                                        <a href="product-detail.html">
+                                                            <h6 class="product-title">Apple iTunes Gift Card $400 (U.S. Account)</h6>
+                                                            <p class="product-desc">Brand: APPLE Sku: 620929</p>
+                                                            <div class="product-price-wrap">
+                                                                <span class="product-discount-price">122.500 KD</span>
+                                                                <span class="product-actual-price">164.900 KD</span>
+                                                            </div>
+                                                        </a>
+                                                        <div class="product-button-wrap">
+                                                            <a href="#" class="btn btn-dark" type="button">Add to Cart</a>
+                                                            <img src="../../img/bestSeller/rating.png"/>
+                                                        </div>
+                                                    </div>
+                                                    <a href="product-detail.html" class="best-seller-product-img-wrap">
+                                                        <img src="../../img/internetCards/iTunesGiftCard400.png" class="img-fluid"/>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        <!-- </div> -->
+                                    <!-- </div> -->
+                                </div>
+                            </div>
+
+                            <div class="col-md-12 p-0 desktop-view">
+                                <nav aria-label="Page navigation" class="pagination-wrap">
+                                    <ul class="pagination justify-content-center">
+                                      <li class="page-item pagination-prev-wrap">
+                                        <img src="../../img/pagination-prev.png" class="pagination-prev pagination-icon"/>
+                                        <a class="page-link" href="#" tabindex="-1">Previous</a>
+                                      </li>
+                                      <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                      <li class="page-item"><a class="page-link sm-d-none" href="#">6</a></li>
+                                      <li class="page-item"><a class="page-link sm-d-none" href="#">7</a></li>
+                                      <li class="page-item"><a class="page-link sm-d-none" href="#">8</a></li>
+                                      <li class="page-item"><a class="page-link sm-d-none" href="#">9</a></li>
+                                      <li class="page-item"><a class="page-link sm-d-none" href="#">10</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">...</a></li>
+                                      <li class="page-item pagination-next-wrap">
+                                        <a class="page-link" href="#">Next</a>
+                                        <img src="../../img/pagination-next.png" class="pagination-next pagination-icon"/>
+                                      </li>
+                                    </ul>
+                                  </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+             <!-- Promo Banner -->
+             <div class="row sm-bg-gary mobile-view-flex">
+                <div class="col-md-12 p-0">
+                    <div class="promo-shop-section-container">
+                        <a href="#">
+                            <img src="../../img/internetCards/promo.png" class="promo-stars img-fluid"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 p-0">
+                    <img src="../../img/footer-img.png"  class="footer-img img-fluid sm-none"/>
+                    <img src="../../img/sm-footer-img.png"  class="footer-img img-fluid lg-none"/>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="row">
+                    <div class="col-md-2 center-align">
+                        <img src="../../img/footer-logo.png" class="footer-logo img-fluid"/>
+                        <div class="sm-footer-input-container">
+                            <div class="footer-email-input">
+                                <input type="email" class="form-control" placeholder="Email"/>
+                                <img src="../../img/send.png" class="email-send"/>
+                            </div>
+                            <p class="stay-in-touch-text">Stay in touch with us for the freshest products!</p>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="footer-links">
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Companies</a></li>
+                                <li><a href="#">Brands</a></li>
+                                <li><a href="#">Electronic Game</a></li>
+                                <li><a href="#">Special Numbers</a></li>
+                                <li><a href="#">Internet Card</a></li>
+                                <li><a href="#">Used Devices</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">Workshop</a></li>
+                                <li><a href="#">Automotive</a></li>
+                                <li><a href="#">Home Accessories</a></li>
+                                <li><a href="#">Kid Toy</a></li>
+                                <li><a href="#">Celebrities</a></li>
+                                <li><a href="#">Wire Store</a></li>
+                                <li><a href="#">Competitions</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Help</a></li>
+                                <li><a href="#">Terms</a></li>
+                                <li><a href="#">Guidlines</a></li>
+                                <li><a href="#">Advertise</a></li>
+                                <li><a href="#">Integrations</a></li>
+                                <li><a href="#">Careers</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footer-input-container">
+                            <div class="footer-email-input">
+                                <input type="email" class="form-control" placeholder="Email"/>
+                                <img src="../../img/send.png" class="email-send"/>
+                            </div>
+                            <p class="stay-in-touch-text">Stay in touch with us for the freshest products!</p>
+                            <p class="copyright-text">Ⓒ 2022, Wire Site. Power by Software Silo</p>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="social-icon-wrap">
+                            <img src="../../img/instagram.png" class="insta-icon"/>
+                            <img src="../../img/twitter.png" class="twitter-icon"/>
+                            <img src="../../img/facebook.png" class="facebook-icon"/>
+                            <img src="../../img/web.png" class="web-icon"/>
+                        </div>
+                        <p class="sm-copyright-text">Ⓒ 2022, Wire Site. Power by Software Silo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $(".navbar-toggler").click(function(){
+            $("body").toggleClass("active");
+        });
+    </script>
+    <script>
+        // Best Seller Carousel
+        $('.best-seller-owl-carousel ').owlCarousel({
+            loop:true,
+            // autoplay:true,
+            items: 4,
+            margin:70,
+            nav:true,
+            autoHeight: true,
+            navText : ['<i class="fa fa-angle-double-left" aria-hidden="true"></i>','<i class="fa fa-angle-double-right" aria-hidden="true"></i>'],
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:1
+                },
+                1000:{
+                    items:3
+                }
+            }
+        })
+    </script>
+</body>
+</html>

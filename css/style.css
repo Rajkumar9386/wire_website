@@ -590,12 +590,14 @@ ul.navbar-nav{
 }
 .brand-box a, .internet-card-box a{
     text-decoration: none;
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 100%;
 }
 .brand-box img, .internet-card-box img{
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
 }
 
 /* Internet cards */
@@ -1145,7 +1147,8 @@ h6.product-title.tab-product-title {
   }
   
   input:checked + .slider {
-    background-color: #2196F3;
+    /* background-color: #2196F3; */
+    background-image: linear-gradient(to right bottom, #575F6B, #2C3036);
   }
   
   input:focus + .slider {
@@ -1243,6 +1246,7 @@ h6.product-title.tab-product-title {
 .align-item-end-wrap{
     display: flex;
     align-items: flex-end;
+    justify-content: center;
 }
 .align-item-center-wrap{
     display: flex;
@@ -1261,5 +1265,45 @@ h6.product-title.tab-product-title {
     font: 32px 'Helvetica_Neu_Bold', sans-serif;
     display: block;
     text-decoration: none;
+    text-align: center;
+}
+
+/* Internet Cards landing page */
+.internet-card-landing-page {
+    background-image: linear-gradient(to bottom, #F8F8FC, #E1E2E8)
+}
+.internet-card-landing-page .internet-card-box{
+    height: auto;
+    padding: 0;
+    border: none;
+    box-shadow: 2px 2px 4px 0 rgb(0 0 0 / 10%), -8px -8px 12px 0 rgb(255 255 255 / 40%);
+    border-radius: 10px;
+}
+.internet-card-landing-page .internet-card-box:hover{
+    box-shadow: inset 2px 2px 4px 0 rgb(0 0 0 / 10%), -8px -8px 12px 0 rgb(255 255 255 / 40%);
+}
+.internet-card-category-wrapper .best-seller-product-img-wrap{
+    padding: 0px;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+}
+.internet-card-category-wrapper .best-seller-product-img-wrap img{
+    height: auto;
+}
+.internet-card-category-wrapper .product-desc{
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+.internet-card-category-wrapper .best-seller-product-details{
+    padding: 0;
+}
+.internet-card-category-wrapper .best-seller-card{
+    padding: 15px;
+    border: none;
+    box-shadow: 2px 2px 6px 0 rgb(0 0 0 / 9%), -8px -8px 4px 0 rgb(255 255 255 / 40%), inset 2px 2px 6px 1px rgb(0 0 0 / 9%), -8px -8px 12px 0 rgb(255 255 255 / 40%);
+    border-radius: 10px;
+}
+.internet-cards-drp .product-drp-wrap{
     text-align: center;
 }
