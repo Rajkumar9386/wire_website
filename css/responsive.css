@@ -412,8 +412,8 @@
         height: 100%;
     }
     .workshop-items-container{
-        grid-template-columns: repeat(6, minmax(0, 1fr));
-        gap: 15px;
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+        gap: 10px;
     }
     .workshop-item{
         padding: 7px 15px;
@@ -432,6 +432,37 @@
     }
     .work-shop-checkbox-wrap .form-check{
         padding-left: 0;
+    }
+    .automotive-items-container{
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 10px;
+    }
+    .home-item::after{
+        display: none;
+    }
+    .home-item a{
+        margin: 0;
+        height: 50px;
+    }
+    .workshop-items-container.mobile-view-grid{
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 10px;
+    }
+    .home-item p{
+        font-size: 11px;
+    }
+    .automotive-category-container .brand-box{
+        padding: 10px;
+    }
+    .automotive-category-input-wrap input{
+        font-size: 12px;
+    }
+    .automotive-category-input-wrap{
+        gap: 15px;
+    }
+    .see-more-link {
+        font: 10px 'Helvetica_Neu_Bold', sans-serif;
+        padding: 8px 12px;
     }
 }
 
@@ -459,6 +490,9 @@
     }
     .mobile-nav-icons, .mobile-nav-sub-top-menu{
         display: inline-block;
+    }
+    .mobile-view-grid{
+        display: grid !important;
     }
     .mobile-nav-icons img{
         margin: 0 3px;

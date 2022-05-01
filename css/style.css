@@ -126,8 +126,8 @@ body {
     margin-left: 10px;
 }
 /* Navbar */
-.mobile-nav-icons,.mobile-nav-sub-top-menu{
-    display: none;
+.mobile-nav-icons,.mobile-nav-sub-top-menu, .mobile-view-grid{
+    display: none !important;
 }
 nav.navbar{
     padding: 8px 150px;
@@ -599,7 +599,7 @@ ul.navbar-nav{
     height: 100%;
 }
 .brand-box img, .internet-card-box img{
-    width: 100%;
+    /* width: 100%; */
     /* height: 100%; */
 }
 
@@ -1407,4 +1407,115 @@ h6.product-title.tab-product-title {
 }
 .work-shop-checkbox-wrap input{
     margin: 0 8px !important;
+}
+
+/* Automotive Accessories */
+.automotive-items-container{
+    display: grid;
+    grid-template-columns: repeat(9, minmax(0, 1fr));
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+.automotive-item{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #707070;
+    padding: 5px;
+}
+.home-items-container1{
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    align-items: center;
+    justify-content: space-evenly;
+    /* gap: 125px; */
+}
+.home-items-container2{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 204px;
+    margin-top: 30px;
+}
+.home-item a{
+    background: #EDEEF2;
+    padding: 8px 12px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 4px 4px 8px 0 rgb(0 0 0 / 10%), -6px -6px 8px 0 rgb(255 255 255 / 60%);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 60px;
+    height: 70px;
+    
+}
+.home-item a img{
+    height: 100%;
+}
+.home-item{
+    position: relative;
+    height: 100%;
+}
+.home-item p{
+    font: 14px 'Helvetica_Medium';
+    color: #505863;
+}
+.home-item:not(:last-child)::after{
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 90%;
+    top: 0%;
+    /* transform: translateY(-50%); */
+    right: 1px;
+    background-color: #707070;
+}
+.automotive-category-input-wrap{
+    gap: 30px;
+}
+.automotive-category-input-wrap input{
+    border: 1px solid #707070;
+    border-radius: 0;
+    font: 16px 'HelveticaNeue', sans-serif;
+    color: #707070;
+}
+.automotive-category-input-wrap input::placeholder{
+    color: #ccc;
+}
+.see-more-link {
+    box-shadow: inset 3px 3px 6px -2px rgb(88 108 138 / 50%);
+    font: 16px 'Helvetica_Neu_Bold', sans-serif;
+    text-decoration: none;
+    color: #343A40;
+    padding: 12px;
+    border-radius: 25px;
+}
+.see-more-link:hover {
+    box-shadow: 3px 3px 6px -2px rgb(88 108 138 / 50%);
+    color: #343A40;
+}
+.automotive-drp-wrap .form-select{
+    border-radius: 0;
+    border: 1px solid #707070;
+    font: 16px 'HelveticaNeue', sans-serif;
+}
+.automotive-cards{
+    padding: 15px;
+    border: none;
+    box-shadow: 2px 2px 6px 0 rgb(0 0 0 / 9%), -8px -8px 4px 0 rgb(255 255 255 / 40%), inset 2px 2px 6px 1px rgb(0 0 0 / 9%), -8px -8px 12px 0 rgb(255 255 255 / 40%);
+    border-radius: 10px;
+}
+.automotive-cards .best-seller-product-img-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #707070;
+}
+.automotive-cards .best-seller-product-img-wrap img{
+    height: auto;
 }
