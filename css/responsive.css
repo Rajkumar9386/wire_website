@@ -464,6 +464,9 @@
         font: 10px 'Helvetica_Neu_Bold', sans-serif;
         padding: 8px 12px;
     }
+    .section-title-big{
+        font-size: 30px;
+    }
 }
 
 @media (max-width: 767px) {
