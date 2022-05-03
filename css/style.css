@@ -712,6 +712,7 @@ ul.navbar-nav{
     border: none;
     color: #000;
     font: 16px 'Helvetica_Neu_Bold', sans-serif;
+    background: transparent;
 }
 .pagination-wrap .page-item .page-link:focus{
     box-shadow: none;
@@ -1574,4 +1575,82 @@ h6.product-title.tab-product-title {
 .mobile-view-flex .automotive-products-cards{
     background-color: #fff;
     border: 1px solid #707070;
+}
+/* Celebrities */
+.celebrities-section{
+    background-color: rgba(243, 243, 246, 93%);
+}
+.celebrities-card-wrap{
+    padding: 15px 30px;
+    position: relative;
+}
+.celebrity-img-wrap{
+    padding: 15px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+}
+.celebrity-img-wrap img{
+    background: #EEEFF3;
+    padding: 15px;
+    border-radius: 100%;
+    box-shadow: 8px 8px 8px 0 rgb(0 0 0 / 6%), -12px -12px 16px 0 rgb(255 255 255 / 60%);
+}
+.celebrity-info-wrap{
+    background: #fff;
+    padding: 130px 10px 10px 10px;
+    margin-top: 125px;
+    box-shadow: 0px 2px 8px 0px rgb(0 0 0 / 10%);
+    border-radius: 5px;
+}
+.celebrity-name{
+    font: 14px 'Helvetica_Neu_Bold', sans-serif;
+    color: #000;
+}
+.celebrity-profile-info, .celebrity-product-info{
+    font: 14px 'HelveticaNeue', sans-serif;
+    color: #22262A;
+    margin-bottom: 0;
+}
+.celebrities-card-grid{
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    background-color: #F2F3F6;
+    padding: 40px 150px;
+}
+.celebrities-cards{
+    position: relative;
+    background: #fff;
+    box-shadow: 0px 2px 8px 0px rgb(0 0 0 / 10%);
+    text-decoration: none;
+    margin-top: 130px;
+    border-radius: 7px;
+    display: block;
+}
+.celebrity-img-round img{
+    text-align: center;
+    background: #EEEFF3;
+    padding: 15px;
+    border-radius: 100%;
+    box-shadow: 8px 8px 8px 0 rgb(0 0 0 / 6%), -12px -12px 16px 0 rgb(255 255 255 / 60%);
+    width: 100%;
+    margin-top: -110px;
+}
+
+.celebrity-info{
+    background: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+.celebrities-video video{
+    height: 290px;
+}
+.bg-white.company-logo-row{
+    background-image: none;
 }

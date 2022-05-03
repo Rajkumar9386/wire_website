@@ -1,3 +1,19 @@
+@media (min-width: 1600px) {
+    .celebrity-img-wrap img{
+        width: 80% !important;
+        margin: 0 auto;
+    }
+    .celebrity-info-wrap{
+        margin-top: 60%;
+    }
+    .celebrities-card-wrap{
+        padding: 15px 65px;
+    }
+    
+    
+    
+}
+
 @media (max-width: 1415px) {
     nav.navbar, .top-nav, #special-number-row, .special-number-big{
         padding: 8px 70px;
@@ -24,6 +40,12 @@
     }
     #all-phones{
         padding: 0px 30px 20px;
+    }
+    .celebrity-name{
+        font-size: 12px;
+    }
+    .celebrity-profile-info, .celebrity-product-info{
+        font-size: 12px;
     }
 }
 @media (max-width: 992px) {
@@ -467,6 +489,33 @@
     .section-title-big{
         font-size: 30px;
     }
+    .celebrities-section{
+        padding: 30px 15px;
+    }
+    .celebrity-img-wrap{
+        width: 75%;
+    }
+    .celebrities-card-wrap{
+        padding: 30px 70px;
+    }
+    .celebrity-name{
+        font-size: 12px;
+    }
+    .celebrity-profile-info, .celebrity-product-info{
+        font-size: 12px;
+    }
+    .celebrities-card-grid{
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        padding: 15px 30px;
+        gap: 10px;
+    }
+    .celebrities-video video{
+        height: 100%;
+    }
+    .sm-celebrities-cards{
+        box-shadow: none;
+        margin-top: 110px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -665,5 +714,11 @@
         width: 7px;
         height: 7px;
         margin: 0 5px;
+    }
+    .celebrities-section .owl-prev{
+        left: 0;
+    }
+    .celebrities-section .owl-next{
+        right: 0;
     }
 }
