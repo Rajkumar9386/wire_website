@@ -516,6 +516,45 @@
         box-shadow: none;
         margin-top: 110px;
     }
+    .sm-w-100{
+        width: 100%;
+    }
+    .sm-mt-30{
+        margin-top: 30px;
+    }
+    .sm-mt-25{
+        margin-top: 25px;
+    }
+    .my-acc-info.mb-4{
+        margin-bottom: 5px !important;
+    }
+    .my-acc-info.mt-4{
+        margin-top: 5px !important;
+    }
+    .signup-container{
+        width: 100%;
+    }
+    .auth-form .row>*{
+        margin-top: 5px;
+    }
+    .auth-form .row.mt-4{
+        margin-top: 12px !important;
+    }
+    .myAccount-left-nav{
+        border: unset;
+        padding-right: 0;
+    }
+    .my-account-right-content-wrapper{
+        padding-left: 0;
+        margin-top: 30px;
+        padding-top: 30px;
+        border-top: 5px solid #707070;
+    }
+    .edit-profile-wrap{
+        display: grid;
+        row-gap: 10px;
+        margin: 15px auto;
+    }
 }
 
 @media (max-width: 767px) {

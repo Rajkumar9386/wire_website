@@ -126,6 +126,10 @@ body {
     font: 12px 'HelveticaNeue', sans-serif;
     /* font-weight: 600; */
     text-transform: uppercase;
+    text-decoration: none;
+}
+.account-wrap:hover{
+    color: #ddd;
 }
 .account-wrap span{
     margin-left: 10px;
@@ -1653,4 +1657,159 @@ h6.product-title.tab-product-title {
 }
 .bg-white.company-logo-row{
     background-image: none;
+}
+
+/* Authentication */
+.auth-title{
+    font: 28px 'Helvetica_Neu_Bold', sans-serif;
+    color: #000;
+    border-bottom: 2px solid #707070;
+    padding-bottom: 7px;
+}
+.auth-top-title{
+    font: 28px 'Helvetica_Neu_Bold', sans-serif;
+    color: #000;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.form-info, .auth-form label, .forgot-password, .form-text{
+    color: #707070;
+    font: 14px 'HelveticaNeue', sans-serif;
+    text-decoration: none;
+}
+.auth-form input{
+    border: 1px solid #707070;
+    border-radius: 0 !important;
+}
+.forgot-password:hover{
+    color: #343A40;
+}
+.btn-forgot-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.btn-login{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font: 14px 'HelveticaNeue', sans-serif;
+    padding: 12px;
+    box-shadow: 0px 0px 9px 2px rgb(0 0 0 / 15%);
+}
+.btn-login:hover{
+    box-shadow: inset 0px 0px 9px 2px rgb(255 255 255 / 30%);
+}
+.signup-container{
+    width: 50%;
+    margin: 0 auto;
+}
+
+/* My Account */
+.myAccount-left-nav{
+    height: 100%;
+    border-right: 2px solid #707070;
+    padding-right: 80px;
+}
+.myAccount-left-nav ul li a{
+    font: 14px 'HelveticaNeue', sans-serif;
+    text-decoration: none;
+}
+.myAccount-left-nav ul li a.active{
+    color: #000;
+}
+.myAccount-left-nav ul li a.active::after{
+    content: ' ';
+    position: absolute;
+    left: -10px;
+    width: 2px;
+    height: 100%;
+    background-color: #000;
+    top: 0%;
+}
+.myAccount-left-nav ul{
+    list-style: none;
+    padding-left: 10px;
+    margin-top: 15px;
+}
+.myAccount-left-nav ul li{
+    margin: 7px 0;
+}
+.myAccount-left-nav ul li hr{
+    margin: 20px 0;
+}
+.myAccount-left-nav ul li a{
+    color: #707070;
+    position: relative;
+}
+.myAccount-left-nav ul li a:hover{
+    color: #000;
+}
+.myAccount-left-nav ul li a:hover::after{
+    content: ' ';
+    position: absolute;
+    left: -10px;
+    width: 2px;
+    height: 100%;
+    background-color: #000;
+    top: 0%;
+}
+.my-account-right-content-wrapper{
+    padding-left: 50px;
+}
+.my-account-title{
+    font: 28px 'Helvetica_Neu_Bold', sans-serif;
+    color: #000;
+    margin-bottom: 30px;
+}
+.my-account-title-with-border{
+    font: 18px 'Helvetica_Medium', sans-serif;
+    color: #000;
+    border-bottom: 2px solid #707070;
+    padding-bottom: 12px;
+    margin-bottom: 30px;
+}
+.my-acc-section-title{
+    font: 15px 'HelveticaNeue', sans-serif;
+    color: #000;
+}
+.my-acc-info, .edit-change-wrap a{
+    font: 13px 'HelveticaNeue', sans-serif;
+    color: #707070;
+}
+.edit-change-wrap a{
+    text-decoration: none;
+}
+.edit-change-wrap a:hover{
+    color: #2C3036;
+}
+.edit-change-wrap span{
+    margin: 0 7px;
+}
+.profile-background-container{
+    position: relative;
+    width: 100%;
+    padding-bottom: 90px;
+}
+.user-profile-img{
+    position: absolute;
+    bottom: 0px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+.edit-profile-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: max-content;
+    margin: 30px auto;
+}
+
+.edit-profile-wrap a{
+    text-decoration: none;
+    color: #707070;
+    font: 14px 'HelveticaNeue', sans-serif;
+    margin: 0 15px;
 }
