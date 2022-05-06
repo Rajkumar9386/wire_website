@@ -368,6 +368,9 @@
     .sm-mb-15{
         margin-bottom: 15px;
     }
+    .sm-mt-30{
+        margin-top: 30px;
+    }
     .lite-section-title{
         font-size: 14px;
         padding: 5px 15px;
@@ -554,6 +557,9 @@
         display: grid;
         row-gap: 10px;
         margin: 15px auto;
+    }
+    .cart-item-product-title, .cart-item-remove-move-wrap a, .cart-select-price .form-select, .cart-select-price .cart-price{
+        font-size: 12px;
     }
 }
 
