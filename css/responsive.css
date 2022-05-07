@@ -561,6 +561,58 @@
     .cart-item-product-title, .cart-item-remove-move-wrap a, .cart-select-price .form-select, .cart-select-price .cart-price{
         font-size: 12px;
     }
+    .cart-item-card i.fa-times{
+        right: 8px;
+        top: 4px;
+    }
+    .competition-box .modal-header{
+        display: none;
+    }
+    .competition-box .modal-body{
+        background-color: #fff;
+        box-shadow: none;
+        border-bottom: 1px solid rgba(0,0,0,.2);
+        padding: 30px;
+        font-size: 15px;
+    }
+    .competition-box .ribbon-img, .competition-box .gray-ribbon-img{
+        display: none;
+    }
+    .competition-box .modal-content{
+        box-shadow: 0px 2px 6px 2px rgba(0,0,0,10%);
+        margin-bottom: 30px;
+        border: none;
+    }
+    .checkout-order-card {
+        display: grid;
+        align-items: center;
+        gap: 15px;
+    }
+    .checkout-table thead{
+        font-size: 14px;
+        border-bottom: 1px solid #707070;
+    }
+    .checkout-order-title, .checkout-order-desc{
+        font-size: 11px;
+        margin-bottom: 5px;
+    }
+    .checkout-table tbody tr{
+        border-bottom: 1px solid #707070;
+    }
+    .checkout-table tbody tr td{
+        font-size: 11px;
+    }
+    .agree-text{
+        font-size: 13px !important;
+    }
+    .payment-card-wrap{
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 15px;
+    }
+    .checkout-payement-container .btn-login{
+        width: 100%;
+    }
 }
 
 @media (max-width: 767px) {

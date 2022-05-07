@@ -1941,3 +1941,142 @@ h6.product-title.tab-product-title {
 .bt-2-gray{
     border-top: 2px solid #707070;
 }
+
+/* Competiton */
+.competition-box{
+    width: 100%;
+}
+.competition-box .modal-header{
+    background-color: #000;
+    height: 80px;
+    position: relative;
+}
+.competition-box .btn-close{
+    background: none;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+.competition-box .modal-body{
+    text-align: center;
+    padding: 50px 30px 20px 30px;
+    background: #EAEAEA;
+    font: 18px 'Helvetica_Neu_Bold', sans-serif;
+    box-shadow: 0px 3px 6px 0px rgb(0 0 0 / 21%);
+}
+.competition-box .modal-body p{margin-bottom: 0;}
+.ribbon-img{
+    height: 110px;
+    width: 45px;
+    position: absolute;
+    z-index: 9;
+    left: 12px;
+}
+.gray-ribbon-img {
+    height: 120px;
+    width: 45px;
+    position: absolute;
+    z-index: 8;
+    left: 12px;
+}
+.competition-box .modal-footer{
+    justify-content: flex-start;
+    border-top: none;
+}
+.time-date-wrap{
+    display: flex;
+    align-items: center;
+}
+.time-date-wrap span, .competition-company-name{
+    font: 12px 'Helvetica_Neu_Bold', sans-serif;
+    color: #A6ADB4;
+}
+.time-date-wrap span:nth-child(1){
+    margin-right: 15px;
+}
+.competition-price, .page-title{
+    font: 26px 'Helvetica_Neu_Bold', sans-serif;
+    color: #000;
+}
+.competition-coupen-code{
+    font: 14px 'HelveticaNeue', sans-serif;
+    color: #000;
+}
+
+/* Checkout */
+.checkout-table thead{
+    border-bottom: 2px solid #707070;
+    text-align: center;
+}
+.th-lg-text{
+    font: 26px 'Helvetica_Neu_Bold', sans-serif;
+    color: #000;
+    text-align: left;
+}
+.checkout-order-card{
+    display: flex;
+    align-items: center;
+}
+.checkout-order-card .checout-order-img{
+    margin-right: 20px;
+    border: 1px solid #707070;
+    padding: 7px;
+}
+.checkout-order-title{
+    font: 15px 'Helvetica_Neu_Bold', sans-serif;
+    color: #000;
+}
+.checkout-order-desc{
+    font: 12px 'Helvetica_Neu_Bold', sans-serif;
+    color: #A6ADB4;
+}
+.checkout-table tbody tr td{
+    vertical-align: middle;
+    text-align: center;
+    font: 14px 'Helvetica_Neu_Bold', sans-serif;
+}
+.form-check-input[type=radio].form-radio{
+    border-radius: 50% !important;
+}
+.form-check-input.form-radio:checked{
+    background-color: #000;
+    border-color: #000;
+}
+.chooes-pay-text{
+    font: 14px 'HelveticaNeue', sans-serif;
+    color: #707070;
+    margin: 60px 0;
+}
+.payment-card-wrap{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.checkout-payement-container .btn-login{
+    margin-top: 5rem;
+}
+.checkout-billing-container .order-summary-wrap{
+    margin-top: 5rem;
+}
+.billing-summary-text{
+    font: 14px 'HelveticaNeue', sans-serif;
+    color: #707070;
+    margin-top: 1rem;
+}
+.billing-summary-f-links {
+    margin-top: 3rem;
+    text-align: center;
+}
+.billing-summary-f-links a{
+    color: #707070;
+    font: 14px 'Helvetica_Neu_Bold', sans-serif;
+    text-decoration: none;
+}
+.billing-summary-f-links a:hover{
+    color: #000;
+}
+.checkout-order-card .checout-order-img{
+    margin-right: 0;
+    height: 120px;
+}
