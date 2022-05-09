@@ -82,7 +82,7 @@
         flex-direction: row-reverse;
     }
     .mobile-nav-icons, .mobile-nav-sub-top-menu{
-        display: inline-block;
+        display: inline-block !important;
     }
     .mobile-nav-icons img{
         margin: 0 3px;
@@ -107,7 +107,7 @@
     }
     .mobile-nav-sub-top-menu{
         background: #000;
-        display: flex;
+        display: flex !important;
         align-items: flex-end;
         width: 100%;
         height: 80px;
@@ -638,7 +638,7 @@
         flex-direction: row-reverse;
     }
     .mobile-nav-icons, .mobile-nav-sub-top-menu{
-        display: inline-block;
+        display: inline-block !important;
     }
     .mobile-view-grid{
         display: grid !important;
@@ -666,7 +666,7 @@
     }
     .mobile-nav-sub-top-menu{
         background: #000;
-        display: flex;
+        display: flex !important;
         align-items: flex-end;
         width: 100%;
         height: 80px;
