@@ -222,8 +222,8 @@
                                 </div>
                             </div>
                             <div class="col-md-5 col-5 pb-15 px-7">
-                                <div class="company-video-box">
-                                    <video width="100%" class="video" id="celebrity-video2" muted>
+                                <div class="company-video-box" id="celebrity-video2">
+                                    <video width="100%" class="video" muted>
                                         <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4" type="video/mp4">
                                       </video>
                                     <div class="playpause"></div>
@@ -655,8 +655,8 @@
             <!-- Video -->
             <div class="row">
                 <div class="col-md-12 sm-px-15">
-                    <div class="video-container">
-                        <video width="100%" height="300px" class="video" id="celebrity-video3" muted>
+                    <div class="video-container" id="celebrity-video3">
+                        <video width="100%" height="300px" class="video" muted>
                             <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4" type="video/mp4">
                           </video>
                         <div class="playpause"></div>
@@ -1195,16 +1195,16 @@
             <!-- Video -->
             <div class="row px-150-py-40">
                 <div class="col-md-6 mb-4">
-                    <div class="video-container">
-                        <video width="100%" height="250px" class="video" id="celebrity-video4" muted>
+                    <div class="video-container" id="celebrity-video4">
+                        <video width="100%" height="250px" class="video" muted>
                             <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4" type="video/mp4">
                           </video>
                         <div class="playpause"></div>
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="video-container">
-                        <video width="100%" height="250px" class="video" id="celebrity-video5" muted>
+                    <div class="video-container" id="celebrity-video5">
+                        <video width="100%" height="250px" class="video" muted>
                             <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4" type="video/mp4">
                           </video>
                         <div class="playpause"></div>
@@ -1337,21 +1337,40 @@
         });
         $(window).scroll(function() {
             $('#celebrity-video2').each(function() {
-                if ($(this).visible(true)) {
-                    $(this)[0].play();
-                    $(".playpause").hide();
+                if ($(this).children(".video").visible(true)) {
+                    $(this).children(".video")[0].play();
+                    $(this).children(".playpause").hide();
                 } else {
-                    $(this)[0].pause();
-                    $(".playpause").show();
+                    $(this).children(".video")[0].pause();
+                    $(this).children(".playpause").show();
                 }
             })
+
             $('#celebrity-video3').each(function() {
-                if ($(this).visible(true)) {
-                    $(this)[0].play();
-                    $(".playpause").hide();
+                if ($(this).children(".video").visible(true)) {
+                    $(this).children(".video")[0].play();
+                    $(this).children(".playpause").hide();
                 } else {
-                    $(this)[0].pause();
-                    $(".playpause").show();
+                    $(this).children(".video")[0].pause();
+                    $(this).children(".playpause").show();
+                }
+            })
+            $('#celebrity-video4').each(function() {
+                if ($(this).children(".video").visible(true)) {
+                    $(this).children(".video")[0].play();
+                    $(this).children(".playpause").hide();
+                } else {
+                    $(this).children(".video")[0].pause();
+                    $(this).children(".playpause").show();
+                }
+            })
+            $('#celebrity-video5').each(function() {
+                if ($(this).children(".video").visible(true)) {
+                    $(this).children(".video")[0].play();
+                    $(this).children(".playpause").hide();
+                } else {
+                    $(this).children(".video")[0].pause();
+                    $(this).children(".playpause").show();
                 }
             })
         });

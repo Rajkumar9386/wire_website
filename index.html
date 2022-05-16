@@ -352,7 +352,7 @@
                         <div class="banner-community-persons-wrap">
                             <div class="banner-community-carousel owl-carousel owl-theme">
                                 <div class="item">
-                                    <div class="banner-com-card">
+                                    <a href="./pages/celebrities/celebrities.html" class="banner-com-card">
                                         <div class="com-avatar">
                                             <img src="img/banner-avatar.png" class="img-fluid banner-avatar"/>
                                         </div>
@@ -360,10 +360,10 @@
                                             <span>Tareq Al-Ali</span>
                                             <span>Community Celebrities</span>
                                         </div>
-                                    </div>
+                                    </a>
                                 </div>
                                 <div class="item">
-                                    <div class="banner-com-card">
+                                    <a href="./pages/celebrities/celebrities.html" class="banner-com-card">
                                         <div class="com-avatar">
                                             <img src="img/banner-avatar.png" class="img-fluid banner-avatar"/>
                                         </div>
@@ -371,10 +371,10 @@
                                             <span>Tareq Al-Ali</span>
                                             <span>Community Celebrities</span>
                                         </div>
-                                    </div>
+                                    </a>
                                 </div>
                                 <div class="item">
-                                    <div class="banner-com-card">
+                                    <a href="./pages/celebrities/celebrities.html" class="banner-com-card">
                                         <div class="com-avatar">
                                             <img src="img/banner-avatar.png" class="img-fluid banner-avatar"/>
                                         </div>
@@ -382,10 +382,10 @@
                                             <span>Tareq Al-Ali</span>
                                             <span>Community Celebrities</span>
                                         </div>
-                                    </div>
+                                    </a>
                                 </div>
                                 <div class="item">
-                                    <div class="banner-com-card">
+                                    <a href="./pages/celebrities/celebrities.html" class="banner-com-card">
                                         <div class="com-avatar">
                                             <img src="img/banner-avatar.png" class="img-fluid banner-avatar"/>
                                         </div>
@@ -393,10 +393,10 @@
                                             <span>Tareq Al-Ali</span>
                                             <span>Community Celebrities</span>
                                         </div>
-                                    </div>
+                                    </a>
                                 </div>
                                 <div class="item">
-                                    <div class="banner-com-card">
+                                    <a href="./pages/celebrities/celebrities.html" class="banner-com-card">
                                         <div class="com-avatar">
                                             <img src="img/banner-avatar.png" class="img-fluid banner-avatar"/>
                                         </div>
@@ -404,10 +404,10 @@
                                             <span>Tareq Al-Ali</span>
                                             <span>Community Celebrities</span>
                                         </div>
-                                    </div>
+                                    </a>
                                 </div>
                                 <div class="item">
-                                    <div class="banner-com-card">
+                                    <a href="./pages/celebrities/celebrities.html" class="banner-com-card">
                                         <div class="com-avatar">
                                             <img src="img/banner-avatar.png" class="img-fluid banner-avatar"/>
                                         </div>
@@ -415,10 +415,10 @@
                                             <span>Tareq Al-Ali</span>
                                             <span>Community Celebrities</span>
                                         </div>
-                                    </div>
+                                    </a>
                                 </div>
                                 <div class="item">
-                                    <div class="banner-com-card">
+                                    <a href="./pages/celebrities/celebrities.html" class="banner-com-card">
                                         <div class="com-avatar">
                                             <img src="img/banner-avatar.png" class="img-fluid banner-avatar"/>
                                         </div>
@@ -426,7 +426,7 @@
                                             <span>Tareq Al-Ali</span>
                                             <span>Community Celebrities</span>
                                         </div>
-                                    </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -500,8 +500,8 @@
                                 </div>
                             </div>
                             <div class="col-md-5 col-5 pb-15 px-7">
-                                <div class="company-video-box">
-                                    <video muted width="100%" class="video" id="company-video">
+                                <div class="company-video-box h-100" id="company-video">
+                                    <video muted width="100%" class="video">
                                         <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
                                       </video>
                                     <div class="playpause"></div>
@@ -1826,8 +1826,8 @@
                                 </div>
                             </div>
                             <div class="col-md-5 col-5 pb-15 px-7">
-                                <div class="company-video-box">
-                                    <video muted width="100%" class="video" id="wire-video">
+                                <div class="company-video-box" id="wire-video">
+                                    <video muted width="100%" class="video">
                                         <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4" type="video/mp4">
                                       </video>
                                     <div class="playpause"></div>
@@ -1992,21 +1992,21 @@
 
         $(window).scroll(function() {
             $('#company-video').each(function() {
-                if ($(this).visible(true)) {
-                    $(this)[0].play();
-                    $(".playpause").hide();
+                if ($(this).children(".video").visible(true)) {
+                    $(this).children(".video")[0].play();
+                    $(this).children(".playpause").hide();
                 } else {
-                    $(this)[0].pause();
-                    $(".playpause").show();
+                    $(this).children(".video")[0].pause();
+                    $(this).children(".playpause").show();
                 }
             })
             $('#wire-video').each(function() {
-                if ($(this).visible(true)) {
-                    $(this)[0].play();
-                    $(".playpause").hide();
+                if ($(this).children(".video").visible(true)) {
+                    $(this).children(".video")[0].play();
+                    $(this).children(".playpause").hide();
                 } else {
-                    $(this)[0].pause();
-                    $(".playpause").show();
+                    $(this).children(".video")[0].pause();
+                    $(this).children(".playpause").show();
                 }
             })
         });

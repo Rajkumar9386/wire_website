@@ -380,7 +380,12 @@ ul.navbar-nav{
 .banner-com-card{
     display: flex;
     align-items: center;
+    text-decoration: none;
+    color: #000;
     /* justify-content: center; */
+}
+.banner-com-card:hover{
+    color: #000;
 }
 .com-details{
     font: 14px 'Helvetica_Light', sans-serif;
@@ -481,6 +486,7 @@ ul.navbar-nav{
     align-items: center;
     justify-content: center;
     position: relative;
+    background: #fff;
 }
 .video-container .playpause{
     width: 80px;

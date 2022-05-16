@@ -164,8 +164,8 @@
             <!-- Video -->
             <div class="row">
                 <div class="col-md-12 sm-px-15">
-                    <div class="video-container">
-                        <video muted width="100%" height="300px" class="video" id="automotive-video">
+                    <div class="video-container" id="automotive-video">
+                        <video muted width="100%" height="300px" class="video">
                             <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/mp4">
                           </video>
                         <div class="playpause"></div>
@@ -872,12 +872,12 @@
         });
         $(window).scroll(function() {
             $('#automotive-video').each(function() {
-                if ($(this).visible(true)) {
-                    $(this)[0].play();
-                    $(".playpause").hide();
+                if ($(this).children(".video").visible(true)) {
+                    $(this).children(".video")[0].play();
+                    $(this).children(".playpause").hide();
                 } else {
-                    $(this)[0].pause();
-                    $(".playpause").show();
+                    $(this).children(".video")[0].pause();
+                    $(this).children(".playpause").show();
                 }
             })
         });
