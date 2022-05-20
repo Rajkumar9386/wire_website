@@ -488,6 +488,9 @@ ul.navbar-nav{
     position: relative;
     background: #fff;
 }
+.company-video-box .video{
+    height: 100%;
+}
 .video-container .playpause{
     width: 80px;
 }
@@ -2094,4 +2097,13 @@ h6.product-title.tab-product-title {
 .checkout-order-card .checout-order-img{
     margin-right: 0;
     height: 120px;
+}
+
+/* Star Rating */
+.small-ratings i{
+    color:#cecece;
+    font-size: 12px;
+}
+.rating-color{
+    color:#000 !important;
 }

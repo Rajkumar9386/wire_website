@@ -220,7 +220,12 @@
                                     </a>
                                     <div class="product-button-wrap">
                                         <a href="#" class="btn btn-dark" type="button">Add to Cart</a>
-                                        <img src="../../img/bestSeller/rating.png">
+                                        <div class="small-ratings ms-2">
+                                            <i class="fa fa-star rating-color"></i>
+                                            <i class="fa fa-star rating-color"></i>
+                                            <i class="fa fa-star rating-color"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
                                     </div>
                                 </div>
                                 <a href="automotive-products.html" class="best-seller-product-img-wrap">
@@ -241,7 +246,12 @@
                                     </a>
                                     <div class="product-button-wrap">
                                         <a href="#" class="btn btn-dark" type="button">Add to Cart</a>
-                                        <img src="../../img/bestSeller/rating.png">
+                                        <div class="small-ratings ms-2">
+                                            <i class="fa fa-star rating-color"></i>
+                                            <i class="fa fa-star rating-color"></i>
+                                            <i class="fa fa-star rating-color"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
                                     </div>
                                 </div>
                                 <a href="automotive-products.html" class="best-seller-product-img-wrap">
@@ -261,7 +271,12 @@
                                     </a>
                                     <div class="product-button-wrap">
                                         <a href="#" class="btn btn-dark" type="button">Add to Cart</a>
-                                        <img src="../../img/bestSeller/rating.png">
+                                        <div class="small-ratings ms-2">
+                                            <i class="fa fa-star rating-color"></i>
+                                            <i class="fa fa-star rating-color"></i>
+                                            <i class="fa fa-star rating-color"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
                                     </div>
                                 </div>
                                 <a href="automotive-products.html" class="best-seller-product-img-wrap">
@@ -283,7 +298,12 @@
                                     </a>
                                     <div class="product-button-wrap">
                                         <a href="#" class="btn btn-dark" type="button">Add to Cart</a>
-                                        <img src="../../img/bestSeller/rating.png">
+                                        <div class="small-ratings ms-2">
+                                            <i class="fa fa-star rating-color"></i>
+                                            <i class="fa fa-star rating-color"></i>
+                                            <i class="fa fa-star rating-color"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
                                     </div>
                                 </div>
                                 <a href="automotive-products.html" class="best-seller-product-img-wrap">
@@ -304,7 +324,12 @@
                                     </a>
                                     <div class="product-button-wrap">
                                         <a href="#" class="btn btn-dark" type="button">Add to Cart</a>
-                                        <img src="../../img/bestSeller/rating.png">
+                                        <div class="small-ratings ms-2">
+                                            <i class="fa fa-star rating-color"></i>
+                                            <i class="fa fa-star rating-color"></i>
+                                            <i class="fa fa-star rating-color"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
                                     </div>
                                 </div>
                                 <a href="automotive-products.html" class="best-seller-product-img-wrap">
@@ -324,7 +349,12 @@
                                     </a>
                                     <div class="product-button-wrap">
                                         <a href="#" class="btn btn-dark" type="button">Add to Cart</a>
-                                        <img src="../../img/bestSeller/rating.png">
+                                        <div class="small-ratings ms-2">
+                                            <i class="fa fa-star rating-color"></i>
+                                            <i class="fa fa-star rating-color"></i>
+                                            <i class="fa fa-star rating-color"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
                                     </div>
                                 </div>
                                 <a href="automotive-products.html" class="best-seller-product-img-wrap">
@@ -698,7 +728,12 @@
                             </a>
                             <div class="product-button-wrap">
                                 <a href="#" class="btn btn-dark" type="button">Add to Cart</a>
-                                <img src="../../img/bestSeller/rating.png" class="ms-3">
+                                <div class="small-ratings ms-2">
+                                    <i class="fa fa-star rating-color"></i>
+                                    <i class="fa fa-star rating-color"></i>
+                                    <i class="fa fa-star rating-color"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -719,7 +754,12 @@
                             </a>
                             <div class="product-button-wrap">
                                 <a href="#" class="btn btn-dark" type="button">Add to Cart</a>
-                                <img src="../../img/bestSeller/rating.png" class="ms-3">
+                                <div class="small-ratings ms-2">
+                                    <i class="fa fa-star rating-color"></i>
+                                    <i class="fa fa-star rating-color"></i>
+                                    <i class="fa fa-star rating-color"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -740,7 +780,12 @@
                             </a>
                             <div class="product-button-wrap">
                                 <a href="#" class="btn btn-dark" type="button">Add to Cart</a>
-                                <img src="../../img/bestSeller/rating.png" class="ms-3">
+                                <div class="small-ratings ms-2">
+                                    <i class="fa fa-star rating-color"></i>
+                                    <i class="fa fa-star rating-color"></i>
+                                    <i class="fa fa-star rating-color"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -860,11 +905,13 @@
         })
     </script>
     <script>
+        $("video").prop('muted', true);
         // Video
         $('.video').parent().click(function () {
             if($(this).children(".video").get(0).paused){        
                 $(this).children(".video").get(0).play();   
                 $(this).children(".playpause").hide();
+                $("video").prop('muted', false);
             } else {       
                 $(this).children(".video").get(0).pause();
                 $(this).children(".playpause").show();

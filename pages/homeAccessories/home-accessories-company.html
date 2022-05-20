@@ -164,10 +164,11 @@
             <!-- Video -->
             <div class="row">
                 <div class="col-md-12 sm-px-15">
-                    <div class="video-container">
+                    <div class="video-container" id="home-accessories">
                         <video width="100%" height="300px" class="video" muted autoplay>
                             <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
                         </video>
+                        <div class="playpause"></div>
                     </div>
                 </div>
             </div>
@@ -218,7 +219,12 @@
                                     </a>
                                     <div class="product-button-wrap">
                                         <a href="#" class="btn btn-dark" type="button">Add to Cart</a>
-                                        <img src="../../img/bestSeller/rating.png">
+                                        <div class="small-ratings ms-2">
+                                            <i class="fa fa-star rating-color"></i>
+                                            <i class="fa fa-star rating-color"></i>
+                                            <i class="fa fa-star rating-color"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
                                     </div>
                                 </div>
                                 <a href="../usedDevices/used-product-detail.html" class="best-seller-product-img-wrap">
@@ -239,7 +245,12 @@
                                     </a>
                                     <div class="product-button-wrap">
                                         <a href="#" class="btn btn-dark" type="button">Add to Cart</a>
-                                        <img src="../../img/bestSeller/rating.png">
+                                        <div class="small-ratings ms-2">
+                                            <i class="fa fa-star rating-color"></i>
+                                            <i class="fa fa-star rating-color"></i>
+                                            <i class="fa fa-star rating-color"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
                                     </div>
                                 </div>
                                 <a href="../usedDevices/used-product-detail.html" class="best-seller-product-img-wrap">
@@ -259,7 +270,12 @@
                                     </a>
                                     <div class="product-button-wrap">
                                         <a href="#" class="btn btn-dark" type="button">Add to Cart</a>
-                                        <img src="../../img/bestSeller/rating.png">
+                                        <div class="small-ratings ms-2">
+                                            <i class="fa fa-star rating-color"></i>
+                                            <i class="fa fa-star rating-color"></i>
+                                            <i class="fa fa-star rating-color"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
                                     </div>
                                 </div>
                                 <a href="../usedDevices/used-product-detail.html" class="best-seller-product-img-wrap">
@@ -281,7 +297,12 @@
                                     </a>
                                     <div class="product-button-wrap">
                                         <a href="#" class="btn btn-dark" type="button">Add to Cart</a>
-                                        <img src="../../img/bestSeller/rating.png">
+                                        <div class="small-ratings ms-2">
+                                            <i class="fa fa-star rating-color"></i>
+                                            <i class="fa fa-star rating-color"></i>
+                                            <i class="fa fa-star rating-color"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
                                     </div>
                                 </div>
                                 <a href="../usedDevices/used-product-detail.html" class="best-seller-product-img-wrap">
@@ -302,7 +323,12 @@
                                     </a>
                                     <div class="product-button-wrap">
                                         <a href="#" class="btn btn-dark" type="button">Add to Cart</a>
-                                        <img src="../../img/bestSeller/rating.png">
+                                        <div class="small-ratings ms-2">
+                                            <i class="fa fa-star rating-color"></i>
+                                            <i class="fa fa-star rating-color"></i>
+                                            <i class="fa fa-star rating-color"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
                                     </div>
                                 </div>
                                 <a href="../usedDevices/used-product-detail.html" class="best-seller-product-img-wrap">
@@ -322,7 +348,12 @@
                                     </a>
                                     <div class="product-button-wrap">
                                         <a href="#" class="btn btn-dark" type="button">Add to Cart</a>
-                                        <img src="../../img/bestSeller/rating.png">
+                                        <div class="small-ratings ms-2">
+                                            <i class="fa fa-star rating-color"></i>
+                                            <i class="fa fa-star rating-color"></i>
+                                            <i class="fa fa-star rating-color"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
                                     </div>
                                 </div>
                                 <a href="../usedDevices/used-product-detail.html" class="best-seller-product-img-wrap">
@@ -713,6 +744,11 @@
     </script>
     <script>
         // Video
+        $("video").prop('muted', true);
+        $('#home-accessories').parent().click(function () {
+            $("#home-accessories video").prop('muted', false);
+        });
+
         $('.video').parent().click(function () {
             if($(this).children(".video").get(0).paused){        
                 $(this).children(".video").get(0).play();   
@@ -721,6 +757,19 @@
                 $(this).children(".video").get(0).pause();
                 $(this).children(".playpause").show();
             }
+        });
+
+        $("#home-accessories .playpause").hide();
+        $(window).scroll(function() {
+            $('#home-accessories').each(function() {
+                if ($(this).children(".video").visible(true)) {
+                    $(this).children(".video")[0].play();
+                    $(this).children(".playpause").hide();
+                } else {
+                    $(this).children(".video")[0].pause();
+                    $(this).children(".playpause").show();
+                }
+            })
         });
     </script>
 </body>
