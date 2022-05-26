@@ -139,6 +139,19 @@ body {
 .account-wrap span{
     margin-left: 10px;
 }
+.lang-dropdown-list li{
+    margin-bottom: 10px;
+}
+.lang-dropdown-list{
+    padding: 10px 10px 0px 10px !important;
+}
+.lang-dropdown-list li a{
+    text-decoration: none;
+    color: #000;
+}
+.lang-dropdown-list li a:hover, #lang-dropdown a:hover{
+    color: #1696A1;
+}
 /* Navbar */
 .mobile-nav-icons,.mobile-nav-sub-top-menu, .mobile-view-grid{
     display: none !important;

@@ -18,16 +18,20 @@
             <div class="top-nav-element-wrap">
                 <img src="../../img/location.png" class="location-icon"/>
                 <div class="lang-drp-wrap">
-                    <div class="btn-group">
+                    <div class="btn-group" id="lang-dropdown">
                         <a href="#" class="top-nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                         <img src="../../img/USA.png" class="country-icon"/>
-                        <span><span class="country-start-text">USA - </span>EN</span>
+                        <span class="country-start-text">USA - EN</span>
                         <img src="../../img/ico_arrow.png" class="lang-drp-icon"/>
                         </a>
-                        <ul class="dropdown-menu">
-                            <li>
+                        <ul class="dropdown-menu lang-dropdown-list">
+                            <li value="1">
+                                <img src="../../img/USA.png" class="country-icon"/>
+                                <a href="#">USA - EN</a>
+                            </li>
+                            <li value="2">
                                 <img src="../../img/arab.png" class="country-icon"/>
-                                <span>AR - URDU</span>
+                                <a href="#">AR - URDU</a>
                             </li>
                         </ul>
                     </div>
@@ -894,6 +898,23 @@
                     $(this).children(".playpause").show();
                 }
             })
+        });
+    </script>
+    <script>
+        $(function(){
+      
+            // Company Type Dropdown
+            $(".lang-dropdown-list a").click(function(){
+                console.log($(this).parent().attr('value'));
+                if($(this).parent().attr('value') == 1){
+                    $("#lang-dropdown .top-nav-link img:first-child").attr('src','../../img/USA.png');
+                }
+                if($(this).parent().attr('value') == 2){
+                    $("#lang-dropdown .top-nav-link img:first-child").attr('src','../../img/arab.png');
+                }
+                $("#lang-dropdown span").text($(this).text());
+            });
+
         });
     </script>
 </body>
