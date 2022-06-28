@@ -181,7 +181,7 @@
     .brand-box, .internet-card-box{
         height: 55px;
     }
-	.internet-card-box::after{
+    .internet-card-box::after{
         display: none;
     }
     .internet-card-box a{width: 100%;}
@@ -821,12 +821,5 @@
     }
     .celebrities-section .owl-next{
         right: 0;
-    }
-	.home-carousel .carousel-item{
-		height:190px;
-	}
-    .profile-edit-form-wrap{
-        width: 100%;
-        margin: 0 auto;
     }
 }

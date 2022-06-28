@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@500&display=swap');
+body{
+    font-family: 'Tajawal', 'Roboto' !important;
+}
+.navbar-nav .nav-item,
+.banner-carousel .carousel-caption h5,
+.banner-carousel .carousel-caption p,
+.banner-carousel .carousel-caption a,
+.bannerModel-box .modal-content,
+.com-details,
+.section-title-wrap span,
+.product-title, .p-desc,
+.section-title-without-see-more,
+.product-button-wrap,
+.product-price-wrap .product-discount-price,
+.product-desc,
+.product-price-wrap .product-actual-price,
+.section-title-wrap .see-more-link,
+.celebrity-name,
+.myAccount-left-nav ul li a,
+.my-account-title
+{
+    font-family:'Tajawal', 'Roboto' !important;
+}

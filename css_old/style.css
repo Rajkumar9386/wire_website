@@ -86,9 +86,6 @@ body {
 .carousel-item .video-container{
     padding: 0;
 }
-.home-carousel .carousel-item{
-	height:630px;
-}
 
 /* Top Navigation */
 .top-nav{
@@ -690,12 +687,13 @@ ul.navbar-nav{
 .border-none{
     border: none !important;
 }
-.sm-internet-card-container{
-    display: none;
-}
 .internet-card-box:nth-child(4n + 4)::after{
     display: none;
 }
+.sm-internet-card-container{
+    display: none;
+}
+
 /* Special Numbers */
 .special-num-img{
     border: 1px solid #707070;
@@ -2138,215 +2136,4 @@ h6.product-title.tab-product-title {
 }
 .rating-color{
     color:#000 !important;
-}
-
-
-/* Edit Profile */
-.profile-edit-form-wrap{
-    width: 40%;
-    margin: 0 auto;
-}
-.profile-edit-form-wrap .form-label{
-    font: 14px 'HelveticaNeue', sans-serif;
-    color: #707070;
-}
-.profile-edit-form-wrap .btn-dark{
-    padding: 6px 40px;
-}
-.w-60{width: 60% !important;}
-
-/* My Orders */
-.my-order-wrap{
-    width: 100%;
-}
-.my-order-wrap .order-number{
-    font: 18px 'HelveticaNeue', sans-serif;
-    color: #050505;
-    margin-top: 15px;
-    margin-bottom: 0;
-}
-.order-date{
-    font: 14px 'HelveticaNeue', sans-serif;
-    color: #707070;
-    margin-top: 25px;
-}
-.reorder-print-order-wrap{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-}
-.reorder-print-order-wrap a{
-    font: 14px 'HelveticaNeue', sans-serif;
-    color: #0682FF;
-    font-weight: 600;
-    text-decoration: none;
-}
-.my-order-table .checkout-order-title{
-    font: 16px 'HelveticaNeue', sans-serif;
-    color: #707070;
-}
-.subtotal-deleiver-text{
-    font: 16px 'HelveticaNeue', sans-serif !important;
-    color: #000;
-    font-weight: 400;
-}
-.total-text{
-    font: 16px 'HelveticaNeue', sans-serif !important;
-    color: #000;
-    font-weight: 600 !important;
-}
-
-/* Order By SKU */
-.bold-text-black{
-    color: #000;
-    font-weight: 600 !important;
-}
-.input-file-group{
-    display: flex;
-    gap: 30px;
-}
-.input-file-group input{width: 40%;}
-.btn-reset{
-    border: 2px solid #707070;
-    color: #000;
-    font: 16px 'HelveticaNeue', sans-serif !important;
-    font-weight: 600 !important;
-    height: 40px;
-    padding: 6px 20px;
-    border-radius: 0;
-}
-.file-upload-instructions{
-    color: #000;
-    font: 16px 'HelveticaNeue', sans-serif !important;
-    margin-top: 30px;
-    margin-bottom: 50px;
-}
-
-/* My Downloadable Products */
-.order-number-text{
-    color: #007FFF;
-    font: 16px 'HelveticaNeue', sans-serif !important;
-    text-align: left !important;
-}
-.table-items-count{
-    color: #707070;
-    font: 16px 'HelveticaNeue', sans-serif !important;
-    margin-top: 20px;
-    margin-bottom: 50px;
-}
-
-/* My Address Book */
-.my-account-title-sm{
-    font-size: 16px;
-}
-.aa-entries-desc{
-    color: #000;
-    font: 14px 'HelveticaNeue', sans-serif;
-    font-weight: 400;
-}
-.manage-address-title, .manage-address-details-wrap{
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-.manage-address-title{
-    border-bottom: 2px solid #707070;
-    color: #000;
-    font: 14px 'HelveticaNeue', sans-serif;
-    font-weight: 400;
-}
-.manage-address-details{
-    margin-top: 15px;
-}
-.manage-address-details p{
-    color: #707070;
-    font: 14px 'HelveticaNeue', sans-serif;
-    font-weight: 400;
-    margin-bottom: 5px;
-}
-.manage-address-details a{
-    color: #007FFF;
-    font: 14px 'HelveticaNeue', sans-serif;
-    font-weight: 400;
-    text-decoration: none;
-    margin-top: 30px;
-    display: block;
-}
-
-/* Account Information */
-.common-form-label{
-    color: #707070;
-    font: 14px 'HelveticaNeue', sans-serif;
-    font-weight: 400;
-}
-
-/* Store Payment Information */
-.tbl-delete-btn .btn{
-    color: #FF0000;
-    font: 16px 'HelveticaNeue', sans-serif;
-    font-weight: 400;
-}
-
-/* Gift Card */
-.btn-blue{
-    color: #fff;
-    font: 14px 'HelveticaNeue', sans-serif;
-    font-weight: 400;
-    background-color: #007FFF;
-    border: 2px solid #007FFF;
-    border-radius: 0;
-}
-.btn-outline{
-    color: #000;
-    font: 14px 'HelveticaNeue', sans-serif;
-    font-weight: 400;
-    background-color: #fff;
-    border: 2px solid #707070;
-    border-radius: 0;
-}
-.btn-outline:hover{
-    color: #fff;
-    border: 2px solid #707070;
-    background-color: #707070;
-}
-.btn-blue:hover{
-    color: #007FFF;
-    border: 2px solid #007FFF;
-    background-color: #fff;
-}
-.gift-card-info{
-    color: #000;
-    font: 14px 'Helvetica_Medium', sans-serif;
-    margin-bottom: 20px;
-}
-
-/* My Invitation */
-.add-email-btn{
-    color: #000;
-    font: 18px 'HelveticaNeue', sans-serif;
-    font-weight: 400;
-    background-color: #fff;
-    margin-bottom: 25px;
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-/* .add-email-btn i{margin-right: 15px;} */
-.add-email-btn:focus{
-    outline: none;
-    box-shadow: none;
-}
-.add-email-btn:hover{
-    color: #007FFF;
-}
-.email-list-item{
-    color: #000;
-    font: 14px 'HelveticaNeue', sans-serif;
-    font-weight: 400;
-    border-top: 1px solid #707070;
-    margin: 0;
-    padding: 15px 0;
-}
-.email-list-wrap:last-child{
-    border-bottom: 1px solid #707070;
 }
