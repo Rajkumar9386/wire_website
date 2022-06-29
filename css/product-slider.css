@@ -12,7 +12,9 @@
     position: relative;
     left: 0px;
   }
-  
+  html[dir="rtl"] .small-img{
+    direction: ltr;
+  }
   .small-img .icon-left, .small-img .icon-right {
     width: 20px;
     height: 24px;

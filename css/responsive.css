@@ -113,6 +113,9 @@
         height: 80px;
         padding: 20px 15px;
     }
+    html[dir="rtl"] .mobile-nav-sub-top-menu{
+        gap: 7px;
+    }
     .sm-lang-drp-wrap{
         margin-right: 10px;
     }
@@ -550,6 +553,17 @@
     .myAccount-left-nav{
         border: unset;
         padding-right: 0;
+    }
+    html[dir="rtl"] .myAccount-left-nav{
+        border: unset;
+        padding-right: 0;
+        padding-left: 0;
+    }
+    html[dir="rtl"] .myAccount-left-nav ul{
+        padding-right: 0;
+    }
+    html[dir="rtl"] .navbar-nav{
+        padding-right: 15px;
     }
     .my-account-right-content-wrapper{
         padding-left: 0;

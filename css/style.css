@@ -136,6 +136,9 @@ body {
     text-transform: uppercase;
     text-decoration: none;
 }
+html[dir="rtl"] .account-wrap{
+    gap: 10px;
+}
 .account-wrap:hover{
     color: #ddd;
 }
@@ -206,6 +209,9 @@ ul.navbar-nav{
     background-color: #EBEBEB;
     border: none;
 }
+html[dir="rtl"] .nav-search{
+    padding: 6px 10px 6px 30px;
+}
 .nav-search:focus{
     outline: none;
     box-shadow: none;
@@ -216,6 +222,13 @@ ul.navbar-nav{
 .search-icon{
     position: absolute;
     right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+html[dir="rtl"] .search-icon{
+    position: absolute;
+    left: 10px;
+    right: unset;
     top: 50%;
     transform: translateY(-50%);
 }
@@ -254,6 +267,7 @@ ul.navbar-nav{
     font: 12px 'HelveticaNeue', sans-serif;
     border: 2px solid #fff;
     height: 42px;
+    padding: 6px 30px 6px 12px;
 }
 .footer-email-input input::placeholder{
     color: #fff;
@@ -276,6 +290,13 @@ ul.navbar-nav{
     right: 10px;
     top: 50%;
     transform: translateY(-50%);
+}
+html[dir="rtl"] .footer-email-input .email-send{
+    right: unset;
+    left: 10px;
+}
+html[dir="rtl"] .footer-email-input input{
+    padding: 6px 12px 6px 30px;
 }
 .stay-in-touch-text{
     color: #fff;
@@ -320,6 +341,10 @@ ul.navbar-nav{
     left: 150px;
     width: max-content;
     text-align: left;
+}
+html[dir="rtl"] .bannerModel-box{
+    left: 150px;
+    right: unset;
 }
 .banner-carousel .carousel-caption h5, .banner-carousel .carousel-caption p, .banner-carousel .carousel-caption a, .bannerModel-box .modal-content{
     font-family: 'HelveticaNeue', sans-serif;
@@ -526,6 +551,9 @@ ul.navbar-nav{
 }
 
 /* Best Seller */
+html[dir="rtl"] .owl-carousel{
+    direction: ltr;
+}
 .section-title-without-see-more{
     font: 30px 'Helvetica_Neu_Bold', sans-serif;
     margin-bottom: 45px;
@@ -686,6 +714,10 @@ ul.navbar-nav{
     top: 50%;
     right: 0%;
     transform: translateY(-50%);
+}
+html[dir="rtl"] .internet-card-box::after{
+    right: unset;
+    left: 0;
 }
 .border-none{
     border: none !important;
@@ -948,6 +980,7 @@ h6.product-title.tab-product-title {
 .product-drp-wrap{
     display: flex;
     align-items: center;
+    gap: 10px;
 }
 .phones-card{
     margin-top: 20px;
@@ -979,6 +1012,10 @@ h6.product-title.tab-product-title {
 }
 .product-detail-content-wrap{
     padding-left: 40px;
+}
+html[dir="rtl"] .product-detail-content-wrap{
+    padding-left: 0px;
+    padding-right: 40px;
 }
 .product-detail-title{
     font: 24px 'Helvetica_Neu_Bold', sans-serif;
@@ -1043,6 +1080,14 @@ h6.product-title.tab-product-title {
     right: 5px;
     top: 0;
 }
+html[dir="rtl"] .electronic-fav-icon{
+    right: unset;
+    left: 5px;
+}
+html[dir="rtl"] .used-product-owl-carousel .electronic-fav-icon{
+    right: 5px;
+    left: unset;
+}
 .electronics-img-wrap{
     display: flex !important;
     align-items: center;
@@ -1089,6 +1134,9 @@ h6.product-title.tab-product-title {
     height: 95%;
     background-color: #707070;
 }
+.mobile-brands-phones-card-container .best-seller-card:nth-child(5n)::after{display: none;}
+html[dir="rtl"] .mobile-brands-phones-card-container .best-seller-card:nth-child(1)::after{display: none;}
+html[dir="rtl"] .mobile-brands-phones-card-container .best-seller-card:nth-child(5n)::after{display: block;}
 .mobile-brands-phones-card{
     background: #707070;
     opacity: 1;
@@ -1103,7 +1151,7 @@ h6.product-title.tab-product-title {
     border-bottom: 1.5px solid rgb(0 0 0 / 16%);
     position: relative;
 }
-.brand-page-mobile-logo-wrap .brands-wrap .brand-box-line:not(:first-child)::after{
+.brand-page-mobile-logo-wrap .brands-wrap .brand-box-line:not(:first-child)::after, html[dir="rtl"] .brand-page-mobile-logo-wrap .brands-wrap .brand-box:nth-child(1n)::after{
     content: '';
     position: absolute;
     left: -8px;
@@ -1112,6 +1160,9 @@ h6.product-title.tab-product-title {
     width: 1px;
     height: 100%;
     background-color: #707070;
+}
+html[dir="rtl"] .brand-page-mobile-logo-wrap .brands-wrap .brand-box-line:nth-child(5n)::after{
+    display: none;
 }
 .brand-page-mobile-logo-wrap .brand-box a{
     background: transparent;
@@ -1240,11 +1291,14 @@ h6.product-title.tab-product-title {
       margin-right: 7px;
   }
   .switch-wrap{
-      margin-right: 30px;
+     gap: 15px;
   }
   .switch-wrap, .switches-container{
       display: flex;
       align-items: center;
+  }
+  .switches-container{
+    gap: 30px;
   }
   #special-number-row, .special-number-big{
       padding: 30px 150px;
@@ -1291,11 +1345,22 @@ h6.product-title.tab-product-title {
     top: 0;
     width: max-content;
   }
+  html[dir="rtl"] .sn-price-container{
+    right: unset;
+    left: 0;
+  }
+  .sn-price-wrap{
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+  }
   .sn-price{
     font: 46px 'Helvetica_Neu_Bold', sans-serif;
+    display: block;
   }
   .price-label{
     font: 18px 'Helvetica_Neu_Bold', sans-serif;
+    display: block;
   }
   .pos-rel{
       position: relative;
@@ -1717,6 +1782,10 @@ h6.product-title.tab-product-title {
 .bg-white.company-logo-row{
     background-image: none;
 }
+html[dir="rtl"] .offset-md-1{
+    margin-right: 8.33333333%;
+    margin-left: 0;
+}
 
 /* Authentication */
 .auth-title{
@@ -1757,6 +1826,9 @@ h6.product-title.tab-product-title {
     padding: 12px;
     box-shadow: 0px 0px 9px 2px rgb(0 0 0 / 15%);
 }
+html[dir="rtl"] .btn-login img{
+    transform: rotate(180deg);
+}
 .btn-login:hover{
     box-shadow: inset 0px 0px 9px 2px rgb(255 255 255 / 30%);
 }
@@ -1770,6 +1842,15 @@ h6.product-title.tab-product-title {
     height: 100%;
     border-right: 2px solid #707070;
     padding-right: 80px;
+}
+html[dir="rtl"] .myAccount-left-nav{
+    padding-right: 0px;
+    padding-left: 80px;
+    border-right: none;
+    border-left: 2px solid #707070;
+}
+html[dir="rtl"] .myAccount-left-nav ul{
+    padding-right: 0;
 }
 .myAccount-left-nav ul li a{
     font: 14px 'HelveticaNeue', sans-serif;
@@ -1786,6 +1867,10 @@ h6.product-title.tab-product-title {
     height: 100%;
     background-color: #000;
     top: 0%;
+}
+html[dir="rtl"] .myAccount-left-nav ul li a.active::after{
+    left: unset;
+    right: -10px;
 }
 .myAccount-left-nav ul{
     list-style: none;
@@ -1813,6 +1898,10 @@ h6.product-title.tab-product-title {
     height: 100%;
     background-color: #000;
     top: 0%;
+}
+html[dir="rtl"] .myAccount-left-nav ul li a:hover::after{
+    left: unset;
+    right: -10px;
 }
 .my-account-right-content-wrapper{
     padding-left: 50px;
@@ -1911,6 +2000,7 @@ h6.product-title.tab-product-title {
     display: flex;
     align-items: flex-start;
     position: relative;
+    gap: 20px;
 }
 .cart-item-card i.fa-times{
     position: absolute;
@@ -1919,9 +2009,13 @@ h6.product-title.tab-product-title {
     color: #000;
     cursor: pointer;
 }
-.card-product-img{
-    margin-right: 20px;
+html[dir="rtl"] .cart-item-card i.fa-times{
+    right: unset;
+    left: 20px;
 }
+/* .card-product-img{
+    margin-right: 20px;
+} */
 .cart-item-product-title{
     font: 16px 'Helvetica_Neu_Bold', sans-serif;
     color: #000;
@@ -1961,6 +2055,9 @@ h6.product-title.tab-product-title {
     border-radius: 0;
     padding: 6px 36px 6px 6px;
     font: 16px 'Helvetica_Neu_Bold', sans-serif;
+}
+html[dir="rtl"] .form-select{
+    background-position: left 0.75rem center;
 }
 .cart-select-price .cart-price{
     font: 16px 'Helvetica_Neu_Bold', sans-serif;
@@ -2067,6 +2164,7 @@ h6.product-title.tab-product-title {
 .checkout-order-card{
     display: flex;
     align-items: center;
+    gap: 20px;
 }
 .checkout-order-card .checout-order-img{
     margin-right: 20px;
@@ -2279,6 +2377,9 @@ h6.product-title.tab-product-title {
     font: 14px 'HelveticaNeue', sans-serif;
     font-weight: 400;
 }
+html[dir="rtl"] .form-check{
+    width: max-content;
+}
 
 /* Store Payment Information */
 .tbl-delete-btn .btn{
@@ -2295,6 +2396,11 @@ h6.product-title.tab-product-title {
     background-color: #007FFF;
     border: 2px solid #007FFF;
     border-radius: 0;
+    margin-right: 24px;
+}
+html[dir="rtl"] .btn-blue{
+    margin-right: 0;
+    margin-left: 24px;
 }
 .btn-outline{
     color: #000;
