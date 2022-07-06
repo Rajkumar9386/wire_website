@@ -823,7 +823,7 @@
         margin-top: 5px;
     }
     .banner-carousel.home-carousel .carousel-indicators{
-        bottom: 40px;
+        bottom: 30px;
     }
     .banner-carousel .carousel-indicators [data-bs-target]{
         width: 7px;
@@ -837,10 +837,16 @@
         right: 0;
     }
 	.home-carousel .carousel-item{
-		height:190px;
+		height:230px;
 	}
     .profile-edit-form-wrap{
         width: 100%;
         margin: 0 auto;
+    }
+    .home-carousel{
+        margin-bottom: 65px;
+    }
+    .mouse-scroll-wrap{
+        display: none;
     }
 }
