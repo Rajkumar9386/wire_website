@@ -865,5 +865,17 @@
 @media (max-width: 560px) {
     .special-imgs-inner-wrap{
         grid-template-columns: repeat(1, minmax(0, 1fr));
+        /* Please uncomment to apply scroll */
+        /* height: 400px;
+        overflow-y: auto; */
+    }
+    .special-imgs-link{
+        width: calc(100% - 50px);
+    }
+    .special-num-text{
+        font: 28px 'HelveticaNeue', sans-serif;
+    }
+    .special-num-kdtext {
+        font: 24px 'HelveticaNeue', sans-serif;
     }
 }
