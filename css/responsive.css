@@ -49,6 +49,17 @@
     }
 }
 @media (max-width: 992px) {
+    .special-imgs-link-wrap{
+        position: static;
+        text-align: center;
+    }
+    .special-imgs-inner-wrap{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        align-items: center;
+        justify-content: center;
+        height: auto;
+    }
     .desktop-view{
         display: none;
     }
@@ -848,5 +859,11 @@
     }
     .mouse-scroll-wrap{
         display: none;
+    }
+}
+
+@media (max-width: 560px) {
+    .special-imgs-inner-wrap{
+        grid-template-columns: repeat(1, minmax(0, 1fr));
     }
 }

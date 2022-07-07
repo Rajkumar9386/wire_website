@@ -2485,3 +2485,91 @@ html[dir="rtl"] .btn-blue{
 .email-list-wrap:last-child{
     border-bottom: 1px solid #707070;
 }
+
+
+
+
+
+/* Special Numbers New */
+.special-imgs-inner-wrap{
+    position: relative;
+}
+.special-imgs-link-wrap{
+    position: absolute;
+}
+.special-imgs-link{
+    position: relative;
+    display: inline-block;
+    width: max-content;
+}
+.special-num-text-wrap{
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    color: #fff;
+    text-align: center;
+    display: grid;
+    gap: 10px;
+}
+.special-num-text{
+    font: 40px 'HelveticaNeue', sans-serif;
+    font-weight: 700;
+}
+.special-num-kdtext{
+    font: 38px 'HelveticaNeue', sans-serif;
+    font-weight: 700;
+}
+.sec-img{
+    transform: scale(0.9);
+    top: -80px;
+    left: 25%;
+}
+.third-img{
+    transform: scale(0.6);
+    top: -120px;
+    right: 30%;
+}
+.revert-img{
+    transform: scaleX(-1);
+}
+.fourth-img {
+    top: -30px;
+    right: 0px;
+}
+.fifth-img{
+    transform: scale(0.8);
+    top: 220px;
+    left: 15%;
+}
+.sixth-img{
+    transform: scale(0.6);
+    top: 120px;
+    left: 38%;
+}
+.seventh-img{
+    transform: scale(0.8);
+    top: 220px;
+    right: 20%;
+}
+.eighth-img{
+    transform: scale(1);
+    top: 330px;
+    right: 0px;
+}
+.ninth-img{
+    transform: scale(0.6);
+    bottom: 0px;
+    left: 0;
+}
+.tenth-img{
+    transform: scale(0.6);
+    bottom: 0px;
+    left: 30%;
+}
+.special-imgs-inner-wrap{
+    margin-top: 100px;
+    height: 750px;
+}
