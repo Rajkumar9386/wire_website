@@ -159,11 +159,12 @@
                             <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
                             <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
                             <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                            <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
                         </div>
                         <div class="carousel-inner">
-                            <div class="carousel-item active">
+                            <div class="carousel-item active video-carousel-item" data-bs-interval="100">
                                 <div class="video-container">
-                                    <video autoplay muted loop class="video" width="100%">
+                                    <video autoplay muted class="video banner-video" width="100%">
                                         <source src="img/video.mp4" type="video/mp4">
                                     </video>
                                 </div>
@@ -191,7 +192,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="carousel-item">
+                            <div class="carousel-item" data-bs-interval="10000">
                                 <img src="img/banner-1.png" class="img-fluid sm-none b-img" alt="Banner 1">
                                 <img src="img/sm-banner-1.png" class="img-fluid lg-none b-img" alt="Banner 1">
                                 <div class="carousel-caption">
@@ -218,7 +219,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="carousel-item">
+                            <div class="carousel-item" data-bs-interval="10000">
                                 <img src="img/banner-2.png" class="img-fluid sm-none b-img" alt="Banner 2">
                                 <img src="img/sm-banner-2.png" class="img-fluid lg-none b-img" alt="Banner 2">
                                 <div class="carousel-caption">
@@ -245,7 +246,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="carousel-item">
+                            <div class="carousel-item" data-bs-interval="10000">
                                 <img src="img/banner-3.png" class="img-fluid sm-none b-img" alt="Banner 3">
                                 <img src="img/sm-banner-3.png" class="img-fluid lg-none b-img" alt="Banner 3">
                                 <div class="carousel-caption">
@@ -272,7 +273,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="carousel-item">
+                            <div class="carousel-item" data-bs-interval="10000">
                                 <img src="img/banner-4.png" class="img-fluid sm-none b-img" alt="Banner 4">
                                 <img src="img/sm-banner-4.png" class="img-fluid lg-none b-img" alt="Banner 4">
                                 <div class="carousel-caption">
@@ -299,7 +300,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="carousel-item">
+                            <div class="carousel-item" data-bs-interval="10000">
                                 <img src="img/banner-5.png" class="img-fluid sm-none b-img" alt="Banner 5">
                                 <img src="img/sm-banner-5.png" class="img-fluid lg-none b-img" alt="Banner 5">
                                 <div class="carousel-caption">
@@ -326,7 +327,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="carousel-item">
+                            <div class="carousel-item" data-bs-interval="10000">
                                 <img src="img/banner-6.png" class="img-fluid sm-none b-img" alt="Banner 6">
                                 <img src="img/sm-banner-6.png" class="img-fluid lg-none b-img" alt="Banner 6">
                                 <div class="carousel-caption">
@@ -2080,10 +2081,10 @@
             navText : ['<i class="fa fa-angle-double-left" aria-hidden="true"></i>','<i class="fa fa-angle-double-right" aria-hidden="true"></i>'],
             responsive:{
                 0:{
-                    items:1
+                    items:2
                 },
                 600:{
-                    items:1
+                    items:2
                 },
                 1000:{
                     items:4
@@ -2161,6 +2162,20 @@
             });
 
         });
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            
+            $('video.banner-video').on('play',function(){
+                $("#bannerCarousel").carousel('pause');
+            });
+            $('video.banner-video').on('ended',function(){
+                $("#bannerCarousel").carousel();
+            });
+            
+        });
+        
     </script>
 </body>
 </html>
