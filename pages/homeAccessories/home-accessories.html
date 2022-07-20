@@ -20,19 +20,37 @@
                 <div class="lang-drp-wrap">
                     <div class="btn-group" id="lang-dropdown">
                         <a href="#" class="top-nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="../../img/USA.png" class="country-icon"/>
-                        <span class="country-start-text">USA - EN</span>
-                        <img src="../../img/ico_arrow.png" class="lang-drp-icon"/>
+                            <!-- <img src="img/USA.png" class="country-icon"/> -->
+                            <span class="country-start-text">USA - EN</span>
+                            <img src="../../img/ico_arrow.png" class="lang-drp-icon"/>
                         </a>
                         <ul class="dropdown-menu lang-dropdown-list">
                             <li value="1">
-                                <img src="../../img/USA.png" class="country-icon"/>
+                                <!-- <img src="img/USA.png" class="country-icon"/> -->
                                 <a href="#">USA - EN</a>
                             </li>
                             <li value="2">
-                                <img src="../../img/arab.png" class="country-icon"/>
+                                <!-- <img src="img/arab.png" class="country-icon"/> -->
                                 <a href="#">AR - URDU</a>
                             </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                <div class="lang-drp-wrap">
+                    <div class="btn-group" id="country-flag-dropdown">
+                        <a href="#" class="top-nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="../../img/USA.png" class="country-icon me-2"/>
+                            <img src="../../img/ico_arrow.png" class="lang-drp-icon"/>
+                        </a>
+                        <ul class="dropdown-menu country-flag-list">
+                            <li value="1">
+                                <a href="#"><img src="../../img/USA.png" class="country-icon"/></a>
+                            </li>
+                            <li value="2">
+                                <a href="#"><img src="../../img/arab.png" class="country-icon"/></a>
+                            </li>
+                            
                         </ul>
                     </div>
                 </div>
@@ -150,10 +168,10 @@
             <!-- Banner Carousel -->
             <div class="row">
                 <div class="col-md-12 p-0">
-                    <h3 class="section-title-wrap">
+                    <!-- <h3 class="section-title-wrap">
                         <span>HOME ACCESSORIES</span>
                         <a href="../../index.html" class="back-link"><i class="fa fa-angle-double-left" aria-hidden="true"></i> Back</a>
-                    </h3>
+                    </h3> -->
                     <div id="bannerCarousel" class="carousel slide banner-carousel otherPage-Carousel" data-bs-ride="carousel">
                         <div class="carousel-indicators">
                             <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -367,17 +385,26 @@
     </script>
     <script>
         $(function(){
-      
+            
             // Company Type Dropdown
             $(".lang-dropdown-list a").click(function(){
-                console.log($(this).parent().attr('value'));
+                // if($(this).parent().attr('value') == 1){
+                //     $("#lang-dropdown .top-nav-link img:first-child").attr('src','img/USA.png');
+                // }
+                // if($(this).parent().attr('value') == 2){
+                //     $("#lang-dropdown .top-nav-link img:first-child").attr('src','img/arab.png');
+                // }
+                $("#lang-dropdown span").text($(this).text());
+            });
+
+            // Country Dropdown
+            $(".country-flag-list a").click(function(){
                 if($(this).parent().attr('value') == 1){
-                    $("#lang-dropdown .top-nav-link img:first-child").attr('src','../../img/USA.png');
+                    $("#country-flag-dropdown .top-nav-link img:first-child").attr('src','img/USA.png');
                 }
                 if($(this).parent().attr('value') == 2){
-                    $("#lang-dropdown .top-nav-link img:first-child").attr('src','../../img/arab.png');
+                    $("#country-flag-dropdown .top-nav-link img:first-child").attr('src','img/arab.png');
                 }
-                $("#lang-dropdown span").text($(this).text());
             });
 
         });
