@@ -91,11 +91,11 @@
                     top: -y * hTimes
                 });
             }).on('mouseenter', function () {
-                // layer.show();
-                // showPanel.show();
+                layer.show();
+                showPanel.show();
             }).on('mouseleave', function () {
-                // layer.hide();
-                // showPanel.hide();
+                layer.hide();
+                showPanel.hide();
             });
         });
     }

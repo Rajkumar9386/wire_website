@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="../../css/responsive.css">
+    <link rel="stylesheet" href="../../css/startRating.css">
     <title>Wire Website</title>
   </head>
   <body>
@@ -17,41 +18,43 @@
         <div class="top-nav bg-dark">
             <div class="top-nav-element-wrap">
                 <img src="../../img/location.png" class="location-icon"/>
-                <div class="lang-drp-wrap">
-                    <div class="btn-group" id="lang-dropdown">
-                        <a href="#" class="top-nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <!-- <img src="img/USA.png" class="country-icon"/> -->
-                            <span class="country-start-text">USA - EN</span>
-                            <img src="../../img/ico_arrow.png" class="lang-drp-icon"/>
-                        </a>
-                        <ul class="dropdown-menu lang-dropdown-list">
-                            <li value="1">
+                <div class="lang-country-drp-wrap">
+                    <div class="lang-drp-wrap">
+                        <div class="btn-group" id="lang-dropdown">
+                            <a href="#" class="top-nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <!-- <img src="img/USA.png" class="country-icon"/> -->
-                                <a href="#">USA - EN</a>
-                            </li>
-                            <li value="2">
-                                <!-- <img src="img/arab.png" class="country-icon"/> -->
-                                <a href="#">AR - URDU</a>
-                            </li>
-                            
-                        </ul>
+                                <span class="country-start-text">USA - EN</span>
+                                <img src="../../img/ico_arrow.png" class="lang-drp-icon"/>
+                            </a>
+                            <ul class="dropdown-menu lang-dropdown-list">
+                                <li value="1">
+                                    <!-- <img src="img/USA.png" class="country-icon"/> -->
+                                    <a href="#">USA - EN</a>
+                                </li>
+                                <li value="2">
+                                    <!-- <img src="img/arab.png" class="country-icon"/> -->
+                                    <a href="#">AR - URDU</a>
+                                </li>
+                                
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                <div class="lang-drp-wrap">
-                    <div class="btn-group" id="country-flag-dropdown">
-                        <a href="#" class="top-nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <img src="../../img/USA.png" class="country-icon me-2"/>
-                            <img src="../../img/ico_arrow.png" class="lang-drp-icon"/>
-                        </a>
-                        <ul class="dropdown-menu country-flag-list">
-                            <li value="1">
-                                <a href="#"><img src="../../img/USA.png" class="country-icon"/></a>
-                            </li>
-                            <li value="2">
-                                <a href="#"><img src="../../img/arab.png" class="country-icon"/></a>
-                            </li>
-                            
-                        </ul>
+                    <div class="lang-drp-wrap">
+                        <div class="btn-group" id="country-flag-dropdown">
+                            <a href="#" class="top-nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="../../img/USA.png" class="country-icon me-2"/>
+                                <img src="../../img/ico_arrow.png" class="lang-drp-icon"/>
+                            </a>
+                            <ul class="dropdown-menu country-flag-list">
+                                <li value="1">
+                                    <a href="#"><img src="../../img/USA.png" class="country-icon"/></a>
+                                </li>
+                                <li value="2">
+                                    <a href="#"><img src="../../img/arab.png" class="country-icon"/></a>
+                                </li>
+                                
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <a href="../../pages/authentication/login.html" class="account-wrap">
@@ -74,16 +77,20 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <div class="mobile-nav-sub-top-menu">
                         <div class="sm-lang-drp-wrap">
-                            <div class="btn-group">
+                            <div class="btn-group" id="sm-lang-dropdown">
                                 <a href="#" class="sm-top-nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <img src="../../img/USA.png" class="country-icon"/>
-                                <span>USA - EN</span>
-                                <img src="../../img/ico_arrow.png" class="lang-drp-icon"/>
+                                    <img src="../../img/USA.png" class="country-icon"/>
+                                    <span>USA - EN</span>
+                                    <img src="../../img/ico_arrow.png" class="lang-drp-icon"/>
                                 </a>
-                                <ul class="dropdown-menu">
-                                    <li>
+                                <ul class="dropdown-menu sm-lang-dropdown-list">
+                                    <li value="1">
+                                        <img src="../../img/USA.png" class="country-icon"/>
+                                        <a href="#">USA - EN</a>
+                                    </li>
+                                    <li value="2">
                                         <img src="../../img/arab.png" class="country-icon"/>
-                                        <span>AR - URDU</span>
+                                        <a href="#">AR - URDU</a>
                                     </li>
                                 </ul>
                             </div>
@@ -160,6 +167,10 @@
                     </ul>
                 </div>
             </div>
+            <div class="mobile-view mobile-nav-search-wrap">
+                <input type="text" class="form-control nav-search" placeholder="SEARCH"/>
+                <img src="../../img/search-icon.png" class="search-icon"/>
+            </div>
         </nav>
     </header>
 
@@ -174,6 +185,14 @@
                     </h3>
                 </div>
             </div> -->
+            <div class="row mobile-view">
+                <div class="col-md-12 p-0">
+                    <h3 class="section-title-wrap section-title-without-bg sm-breadcrumb">
+                        <span>Companies/X-cite</span>
+                        <!-- <a href="companies.html" class="back-link"><i class="fa fa-angle-double-left" aria-hidden="true"></i> Back</a> -->
+                    </h3>
+                </div>
+            </div>
             <!-- Electronics -->
             <div class="row sm-bg-gary" id="phones">
                 <div class="col-md-12" id="all-phones">
@@ -252,11 +271,11 @@
                                                 </a>
                                                 <div class="product-button-wrap">
                                                     <a href="#" class="btn btn-dark" type="button">Add to Cart</a>
-                                                    <div class="small-ratings ms-2">
-                                                        <i class="fa fa-star rating-color"></i>
-                                                        <i class="fa fa-star rating-color"></i>
-                                                        <i class="fa fa-star rating-color"></i>
-                                                        <i class="fa fa-star"></i>
+                                                    <div class="small-ratings rating-stars ms-2">
+                                                        <i class="fa fa-star star" data-value='1'></i>
+                                                        <i class="fa fa-star star" data-value='2'></i>
+                                                        <i class="fa fa-star star" data-value='3'></i>
+                                                        <i class="fa fa-star star" data-value='4'></i>
                                                     </div>
                                                 </div>
                                             </div>
@@ -280,12 +299,12 @@
                                                 </a>
                                                 <div class="product-button-wrap">
                                                     <a href="#" class="btn btn-dark" type="button">Add to Cart</a>
-                                                    <div class="small-ratings ms-2">
-                                    <i class="fa fa-star rating-color"></i>
-                                    <i class="fa fa-star rating-color"></i>
-                                    <i class="fa fa-star rating-color"></i>
-                                    <i class="fa fa-star"></i>
-                                </div>
+                                                    <div class="small-ratings rating-stars ms-2">
+                                                        <i class="fa fa-star star" data-value='1'></i>
+                                                        <i class="fa fa-star star" data-value='2'></i>
+                                                        <i class="fa fa-star star" data-value='3'></i>
+                                                        <i class="fa fa-star star" data-value='4'></i>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <a href="product-detail.html" class="best-seller-product-img-wrap electronics-img-wrap">
@@ -309,12 +328,12 @@
                                                 </a>
                                                 <div class="product-button-wrap">
                                                     <a href="#" class="btn btn-dark" type="button">Add to Cart</a>
-                                                    <div class="small-ratings ms-2">
-                                    <i class="fa fa-star rating-color"></i>
-                                    <i class="fa fa-star rating-color"></i>
-                                    <i class="fa fa-star rating-color"></i>
-                                    <i class="fa fa-star"></i>
-                                </div>
+                                                    <div class="small-ratings rating-stars ms-2">
+                                                        <i class="fa fa-star star" data-value='1'></i>
+                                                        <i class="fa fa-star star" data-value='2'></i>
+                                                        <i class="fa fa-star star" data-value='3'></i>
+                                                        <i class="fa fa-star star" data-value='4'></i>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <a href="product-detail.html" class="best-seller-product-img-wrap electronics-img-wrap">
@@ -338,12 +357,12 @@
                                                 </a>
                                                 <div class="product-button-wrap">
                                                     <a href="#" class="btn btn-dark" type="button">Add to Cart</a>
-                                                    <div class="small-ratings ms-2">
-                                    <i class="fa fa-star rating-color"></i>
-                                    <i class="fa fa-star rating-color"></i>
-                                    <i class="fa fa-star rating-color"></i>
-                                    <i class="fa fa-star"></i>
-                                </div>
+                                                    <div class="small-ratings rating-stars ms-2">
+                                                        <i class="fa fa-star star" data-value='1'></i>
+                                                        <i class="fa fa-star star" data-value='2'></i>
+                                                        <i class="fa fa-star star" data-value='3'></i>
+                                                        <i class="fa fa-star star" data-value='4'></i>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <a href="product-detail.html" class="best-seller-product-img-wrap electronics-img-wrap">
@@ -366,12 +385,12 @@
                                                 </a>
                                                 <div class="product-button-wrap">
                                                     <a href="#" class="btn btn-dark" type="button">Add to Cart</a>
-                                                    <div class="small-ratings ms-2">
-                                    <i class="fa fa-star rating-color"></i>
-                                    <i class="fa fa-star rating-color"></i>
-                                    <i class="fa fa-star rating-color"></i>
-                                    <i class="fa fa-star"></i>
-                                </div>
+                                                    <div class="small-ratings rating-stars ms-2">
+                                                        <i class="fa fa-star star" data-value='1'></i>
+                                                        <i class="fa fa-star star" data-value='2'></i>
+                                                        <i class="fa fa-star star" data-value='3'></i>
+                                                        <i class="fa fa-star star" data-value='4'></i>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <a href="product-detail.html" class="best-seller-product-img-wrap electronics-img-wrap">
@@ -395,12 +414,12 @@
                                                 </a>
                                                 <div class="product-button-wrap">
                                                     <a href="#" class="btn btn-dark" type="button">Add to Cart</a>
-                                                    <div class="small-ratings ms-2">
-                                    <i class="fa fa-star rating-color"></i>
-                                    <i class="fa fa-star rating-color"></i>
-                                    <i class="fa fa-star rating-color"></i>
-                                    <i class="fa fa-star"></i>
-                                </div>
+                                                    <div class="small-ratings rating-stars ms-2">
+                                                        <i class="fa fa-star star" data-value='1'></i>
+                                                        <i class="fa fa-star star" data-value='2'></i>
+                                                        <i class="fa fa-star star" data-value='3'></i>
+                                                        <i class="fa fa-star star" data-value='4'></i>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <a href="product-detail.html" class="best-seller-product-img-wrap electronics-img-wrap">
@@ -424,12 +443,12 @@
                                                 </a>
                                                 <div class="product-button-wrap">
                                                     <a href="#" class="btn btn-dark" type="button">Add to Cart</a>
-                                                    <div class="small-ratings ms-2">
-                                    <i class="fa fa-star rating-color"></i>
-                                    <i class="fa fa-star rating-color"></i>
-                                    <i class="fa fa-star rating-color"></i>
-                                    <i class="fa fa-star"></i>
-                                </div>
+                                                    <div class="small-ratings rating-stars ms-2">
+                                                        <i class="fa fa-star star" data-value='1'></i>
+                                                        <i class="fa fa-star star" data-value='2'></i>
+                                                        <i class="fa fa-star star" data-value='3'></i>
+                                                        <i class="fa fa-star star" data-value='4'></i>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <a href="product-detail.html" class="best-seller-product-img-wrap electronics-img-wrap">
@@ -452,12 +471,12 @@
                                                 </a>
                                                 <div class="product-button-wrap">
                                                     <a href="#" class="btn btn-dark" type="button">Add to Cart</a>
-                                                    <div class="small-ratings ms-2">
-                                    <i class="fa fa-star rating-color"></i>
-                                    <i class="fa fa-star rating-color"></i>
-                                    <i class="fa fa-star rating-color"></i>
-                                    <i class="fa fa-star"></i>
-                                </div>
+                                                    <div class="small-ratings rating-stars ms-2">
+                                                        <i class="fa fa-star star" data-value='1'></i>
+                                                        <i class="fa fa-star star" data-value='2'></i>
+                                                        <i class="fa fa-star star" data-value='3'></i>
+                                                        <i class="fa fa-star star" data-value='4'></i>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <a href="product-detail.html" class="best-seller-product-img-wrap electronics-img-wrap">
@@ -481,12 +500,12 @@
                                                 </a>
                                                 <div class="product-button-wrap">
                                                     <a href="#" class="btn btn-dark" type="button">Add to Cart</a>
-                                                    <div class="small-ratings ms-2">
-                                    <i class="fa fa-star rating-color"></i>
-                                    <i class="fa fa-star rating-color"></i>
-                                    <i class="fa fa-star rating-color"></i>
-                                    <i class="fa fa-star"></i>
-                                </div>
+                                                    <div class="small-ratings rating-stars ms-2">
+                                                        <i class="fa fa-star star" data-value='1'></i>
+                                                        <i class="fa fa-star star" data-value='2'></i>
+                                                        <i class="fa fa-star star" data-value='3'></i>
+                                                        <i class="fa fa-star star" data-value='4'></i>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <a href="product-detail.html" class="best-seller-product-img-wrap electronics-img-wrap">
@@ -585,6 +604,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../../js/startRating.js"></script>
     <script>
         $(".navbar-toggler").click(function(){
             $("body").toggleClass("active");
@@ -612,6 +632,9 @@
                 if($(this).parent().attr('value') == 2){
                     $("#country-flag-dropdown .top-nav-link img:first-child").attr('src','img/arab.png');
                 }
+            });
+            $(".sm-lang-dropdown-list a").click(function(){
+                $("#sm-lang-dropdown span").text($(this).text());
             });
 
         });

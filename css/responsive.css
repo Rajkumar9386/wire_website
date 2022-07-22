@@ -110,11 +110,15 @@
     }
     #navbarNav{
         position: absolute;
-        right: 0;
+        left: 0;
         top: 53px;
         background-color: #fff;
         justify-content: initial;
         z-index: 9;
+    }
+    html[dir="rtl"] #navbarNav{
+        right: 0;
+        left: auto;
     }
     .mobile-nav-sub-top-menu{
         background: #000;
@@ -166,6 +170,9 @@
     }
     .navbar-nav .nav-item:after, .sm-d-none{
         display: none;
+    }
+    .banner-carousel .carousel-caption{
+        width: auto;
     }
     .section-title-wrap span, .section-title-without-see-more{
         font: 16px 'Helvetica_Neu_Bold', sans-serif;
@@ -345,7 +352,10 @@
         display: inline-block;
     }
     .comp-cat-pad{
-        padding: 15px 30px;
+        padding: 15px;
+    }
+    .small-ratings.ms-2 {
+        margin-left: 0rem!important;
     }
     .sm-mt-30{
         padding-top: 30px;
@@ -494,12 +504,65 @@
         display: none;
     }
     .home-item a{
-        margin: 0;
+        width: max-content;
+        margin: 0 auto !important;
         height: 50px;
+    }
+    .home-item a img{
+        width: 40px;
     }
     .workshop-items-container.mobile-view-grid{
         grid-template-columns: repeat(4, minmax(0, 1fr));
-        gap: 10px;
+        gap: 5px;
+    }
+    .workshop-items-container.mobile-view-flex4-wrap{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+        padding: 15px 0;
+    }
+    .workshop-items-container.mobile-view-flex4-wrap .home-item{
+        flex: 0 0 calc(28% - 20px);
+    }
+    .workshop-items-container.mobile-view-flex6-wrap{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 15px 0;
+    }
+    .workshop-items-container.mobile-view-flex6-wrap .workshop-item{
+        flex: 0 0 calc(18% - 20px);
+        padding: 10px;
+        box-shadow: 7px 7px 8px 0 rgb(0 0 0 / 20%), -6px -6px 3px 0px rgb(255 255 255);
+    }
+    .workshop-item a img{
+        width: 30px;
+        height: 35px;
+    }
+    .row.work-shop-checkbox-wrap{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .row.work-shop-checkbox-wrap .col-md-4 {
+        flex: 0 0 calc(55% - 20px);
+    }
+    .row.work-shop-checkbox-wrap img{
+        width: 35px;
+    }
+    .work-shop-checkbox-wrap .form-check-label {
+        font: 10px 'HelveticaNeue', sans-serif;
+        color: #707070;
+    }
+    .work-shop-checkbox-btn-wrap .btn-dark{
+        padding: 1px 25px !important;
+        font-size: 14px;
+    }
+    .work-shop-checkbox-btn-wrap.mt-5.sm-text-center{
+        margin-top: 1rem !important;
+        margin-bottom: 2rem;
     }
     .home-item p{
         font-size: 11px;
@@ -660,11 +723,36 @@
     .checkout-payement-container .btn-login{
         width: 100%;
     }
+    .section-title-wrap span.shadow-title,
+    .section-title-without-see-more.shadow-title{
+        padding: 7px 30px;
+    }
+    .section-title-wrap.sm-breadcrumb span{
+        font: 12px 'HelveticaNeue', sans-serif;
+        color: #9E9E9E;
+        text-transform: capitalize;
+    }
+    .section-title-wrap.sm-breadcrumb{
+        background: #f8f9fa;
+        border: none;
+        padding-bottom: 15px;
+    }
+    .top-nav-link{
+        color: #fff;
+        font-size: 14px;
+        line-height: 1.4 !important;
+    }
+    .lang-drp-wrap{
+        margin-right: 7px;
+    }
 }
 
 @media (max-width: 767px) {
     body.active{
         background: rgba(0,0,0,0.7);
+    }
+    .bg-light{
+        background-color: #E9E9E9 !important;
     }
     .top-nav{
         padding: 4px 10px;
@@ -672,7 +760,8 @@
     .top-nav-element-wrap{
         justify-content: space-between;
     }
-    .country-start-text, .top-nav-link .country-icon, .account-wrap{
+    /* .country-start-text, .top-nav-link .country-icon, */
+    .account-wrap{
         display: none;
     }
     #navbarNav.collapse:not(.show){
@@ -694,7 +783,7 @@
         margin: 0 3px;
     }
     .navbar-brand{
-        width: 110px;
+        width: 150px;
         margin: 0;
     }
     .navbar-toggler{
@@ -705,11 +794,15 @@
     }
     #navbarNav{
         position: absolute;
-        right: 0;
+        left: 0;
         top: 53px;
         background-color: #fff;
         justify-content: initial;
         z-index: 9;
+    }
+    html[dir="rtl"] #navbarNav{
+        right: 0;
+        left: auto;
     }
     .mobile-nav-sub-top-menu{
         background: #000;
@@ -845,7 +938,8 @@
         font-size: 25px;
     }
     .banner-carousel .carousel-caption p{
-        font-size: 12px;
+        font-size: 16px;
+        line-height: 1.4;
     }
     .banner-carousel .carousel-caption{
         left: 15px;
@@ -860,7 +954,9 @@
     .banner-carousel .carousel-indicators [data-bs-target]{
         width: 7px;
         height: 7px;
-        margin: 0 5px;
+        margin: 0 3px;
+        border: 1px solid transparent;
+        outline: 2px solid #000;
     }
     .celebrities-section .owl-prev{
         left: -6px;

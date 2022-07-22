@@ -19,41 +19,43 @@
         <div class="top-nav bg-dark">
             <div class="top-nav-element-wrap">
                 <img src="../../img/location.png" class="location-icon"/>
-                <div class="lang-drp-wrap">
-                    <div class="btn-group" id="lang-dropdown">
-                        <a href="#" class="top-nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <!-- <img src="img/USA.png" class="country-icon"/> -->
-                            <span class="country-start-text">USA - EN</span>
-                            <img src="../../img/ico_arrow.png" class="lang-drp-icon"/>
-                        </a>
-                        <ul class="dropdown-menu lang-dropdown-list">
-                            <li value="1">
+                <div class="lang-country-drp-wrap">
+                    <div class="lang-drp-wrap">
+                        <div class="btn-group" id="lang-dropdown">
+                            <a href="#" class="top-nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <!-- <img src="img/USA.png" class="country-icon"/> -->
-                                <a href="#">USA - EN</a>
-                            </li>
-                            <li value="2">
-                                <!-- <img src="img/arab.png" class="country-icon"/> -->
-                                <a href="#">AR - URDU</a>
-                            </li>
-                            
-                        </ul>
+                                <span class="country-start-text">USA - EN</span>
+                                <img src="../../img/ico_arrow.png" class="lang-drp-icon"/>
+                            </a>
+                            <ul class="dropdown-menu lang-dropdown-list">
+                                <li value="1">
+                                    <!-- <img src="img/USA.png" class="country-icon"/> -->
+                                    <a href="#">USA - EN</a>
+                                </li>
+                                <li value="2">
+                                    <!-- <img src="img/arab.png" class="country-icon"/> -->
+                                    <a href="#">AR - URDU</a>
+                                </li>
+                                
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                <div class="lang-drp-wrap">
-                    <div class="btn-group" id="country-flag-dropdown">
-                        <a href="#" class="top-nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <img src="../../img/USA.png" class="country-icon me-2"/>
-                            <img src="../../img/ico_arrow.png" class="lang-drp-icon"/>
-                        </a>
-                        <ul class="dropdown-menu country-flag-list">
-                            <li value="1">
-                                <a href="#"><img src="../../img/USA.png" class="country-icon"/></a>
-                            </li>
-                            <li value="2">
-                                <a href="#"><img src="../../img/arab.png" class="country-icon"/></a>
-                            </li>
-                            
-                        </ul>
+                    <div class="lang-drp-wrap">
+                        <div class="btn-group" id="country-flag-dropdown">
+                            <a href="#" class="top-nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="../../img/USA.png" class="country-icon me-2"/>
+                                <img src="../../img/ico_arrow.png" class="lang-drp-icon"/>
+                            </a>
+                            <ul class="dropdown-menu country-flag-list">
+                                <li value="1">
+                                    <a href="#"><img src="../../img/USA.png" class="country-icon"/></a>
+                                </li>
+                                <li value="2">
+                                    <a href="#"><img src="../../img/arab.png" class="country-icon"/></a>
+                                </li>
+                                
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <a href="../../pages/authentication/login.html" class="account-wrap">
@@ -76,16 +78,20 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <div class="mobile-nav-sub-top-menu">
                         <div class="sm-lang-drp-wrap">
-                            <div class="btn-group">
+                            <div class="btn-group" id="sm-lang-dropdown">
                                 <a href="#" class="sm-top-nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <img src="../../img/USA.png" class="country-icon"/>
-                                <span>USA - EN</span>
-                                <img src="../../img/ico_arrow.png" class="lang-drp-icon"/>
+                                    <img src="../../img/USA.png" class="country-icon"/>
+                                    <span>USA - EN</span>
+                                    <img src="../../img/ico_arrow.png" class="lang-drp-icon"/>
                                 </a>
-                                <ul class="dropdown-menu">
-                                    <li>
+                                <ul class="dropdown-menu sm-lang-dropdown-list">
+                                    <li value="1">
+                                        <img src="../../img/USA.png" class="country-icon"/>
+                                        <a href="#">USA - EN</a>
+                                    </li>
+                                    <li value="2">
                                         <img src="../../img/arab.png" class="country-icon"/>
-                                        <span>AR - URDU</span>
+                                        <a href="#">AR - URDU</a>
                                     </li>
                                 </ul>
                             </div>
@@ -161,6 +167,10 @@
                         </li>
                     </ul>
                 </div>
+            </div>
+            <div class="mobile-view mobile-nav-search-wrap">
+                <input type="text" class="form-control nav-search" placeholder="SEARCH"/>
+                <img src="../../img/search-icon.png" class="search-icon"/>
             </div>
         </nav>
     </header>
@@ -355,6 +365,9 @@
                 if($(this).parent().attr('value') == 2){
                     $("#country-flag-dropdown .top-nav-link img:first-child").attr('src','img/arab.png');
                 }
+            });
+            $(".sm-lang-dropdown-list a").click(function(){
+                $("#sm-lang-dropdown span").text($(this).text());
             });
 
         });

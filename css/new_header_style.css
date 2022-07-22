@@ -1,0 +1,16 @@
+/* Author - Raj Kumar || Date - 20-04-2022 */
+.nav-item .dropdown .category-drp{
+    font: 12px 'HelveticaNeue', sans-serif;
+}
+.category-nav-item::after{
+    display: none;
+}
+.category-drp-menu{
+    min-width: 20rem;
+    background-color: #f8f9fa!important;
+    border: none;
+    box-shadow: 0px 1px 4px 2px rgb(0 0 0 / 10%);
+}
+.category-drp-menu li a{
+    font: 14px 'HelveticaNeue', sans-serif;
+}
