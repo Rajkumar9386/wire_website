@@ -6,8 +6,8 @@
             layerH: 100,
             layerOpacity: 0.2,
             layerBgc: '#000',
-            showPanelW: 500,
-            showPanelH: 500,
+            showPanelW: 400,
+            showPanelH: 300,
             marginL: 5,
             marginT: 0
         };

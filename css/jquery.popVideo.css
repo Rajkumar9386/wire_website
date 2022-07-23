@@ -68,7 +68,7 @@
 }
 
 .popvideo-head {
-  top: -40px;
+  top: 0px;
   left: 0;
   padding-left: 15px;
   padding-right: 50px;
@@ -107,7 +107,7 @@
 
 .popvideo-control-wrap {
   height: 42px;
-  bottom: -42px;
+  bottom: 0px;
   left: 0;
   -webkit-transition: bottom .3s ease;
   transition: bottom .3s ease;

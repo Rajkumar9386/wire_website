@@ -788,7 +788,10 @@ html[dir="rtl"] .owl-carousel{
 }
 .brand-box img, .internet-card-box img{
     /* width: 100%; */
-    /* height: 100%; */
+    height: 100%;
+}
+.automotive-category-img-auto .brand-box img{
+    height: auto;
 }
 
 /* Internet cards */
