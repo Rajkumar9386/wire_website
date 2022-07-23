@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="../../css/responsive.css">
     <link rel="stylesheet" href="../../css/startRating.css">
+    <link rel="stylesheet" href="../../css/jquery.popVideo.css">
     <title>Wire Website</title>
   </head>
   <body>
@@ -206,8 +207,7 @@
             <div class="row">
                 <div class="col-md-12 sm-px-15">
                     <div class="video-container" id="home-accessories">
-                        <video width="100%" height="300px" class="video" muted autoplay>
-                            <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+                        <video autoplay height="300px" width="100%" class="video" webkit-playsinline playsinline data-video="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4">
                         </video>
                         <div class="playpause"></div>
                     </div>
@@ -755,7 +755,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-visible/1.2.0/jquery.visible.min.js" integrity="sha512-771ZvVCYr4EfUGXr63AcX7thw7EKa6QE1fhxi8JG7mPacB/arC0cyvYPXKUkCrX2sYKnnFCZby3ZZik42jOuSQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="../../js/startRating.js"></script>
+    <script src="../../js/jquery.popVideo.js"></script>
+
     <script>
         $(".navbar-toggler").click(function(){
             $("body").toggleClass("active");
@@ -788,25 +791,33 @@
     </script>
     <script>
 
+        // $(document).on("click",".video", function () {
+        //     var video = $(this);
+        //     // video.on('click', function(e){
+        //         var vid = video[0];
+        //         vid.play();
+        //         if (vid.requestFullscreen) {
+        //         vid.requestFullscreen();
+        //         } else if (vid.mozRequestFullScreen) {
+        //         vid.mozRequestFullScreen();
+        //         } else if (vid.webkitRequestFullscreen) {
+        //         vid.webkitRequestFullscreen();
+        //         }
+        //     // });
+        // });
         $(document).on("click",".video", function () {
-            var video = $(this);
-            // video.on('click', function(e){
-                var vid = video[0];
-                vid.play();
-                if (vid.requestFullscreen) {
-                vid.requestFullscreen();
-                } else if (vid.mozRequestFullScreen) {
-                vid.mozRequestFullScreen();
-                } else if (vid.webkitRequestFullscreen) {
-                vid.webkitRequestFullscreen();
-                }
-            // });
+            $(this).get(0).pause();
+            $(this).popVideo({
+                playOnOpen: true,
+                closeOnEnd: true,
+                pauseOnClose: true,
+            }).open()
         });
         // Video
         $("video").prop('muted', true);
-        $('#home-accessories').parent().click(function () {
-            $("#home-accessories video").prop('muted', false);
-        });
+        // $('#home-accessories').parent().click(function () {
+        //     $("#home-accessories video").prop('muted', false);
+        // });
 
         // $('.video').parent().click(function () {
         //     if($(this).children(".video").get(0).paused){        

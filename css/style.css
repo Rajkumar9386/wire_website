@@ -159,6 +159,12 @@ html[dir="rtl"] .lang-drp-icon{
 html[dir="rtl"] .lang-drp-wrap{
     margin-left: 0;
 }
+html[dir="rtl"] .owl-carousel .owl-item .item{
+    direction: rtl;
+}
+html[dir="rtl"] .arrow-wrap img{
+    transform: rotate(180deg);
+}
 .account-wrap:hover{
     color: #ddd;
 }
@@ -232,6 +238,18 @@ ul.navbar-nav{
     top: 50%;
     transform: translateY(-50%);
 }
+html[dir="rtl"] .navbar-nav .nav-item:after{
+    left: 0;
+    right: auto;
+}
+html[dir="rtl"] .dropdown-toggle::after{
+    margin-left: 0;
+    margin-right: 0.255em;
+}
+html[dir="rtl"] .com-details{
+    margin-left: 0px;
+    margin-right: 10px;
+}
 #navbarNav{
     display: grid !important;
     align-items: center;
@@ -257,6 +275,10 @@ ul.navbar-nav{
 }
 html[dir="rtl"] .nav-search{
     padding: 6px 10px 6px 30px;
+}
+html[dir="rtl"] .ms-2{
+    margin-right: 0.5rem!important;
+    margin-left: 0rem!important;
 }
 .nav-search:focus{
     outline: none;
@@ -2634,14 +2656,9 @@ html[dir="rtl"] .btn-blue{
     margin-top: 100px;
     height: 750px;
 }
-
-
-
-
-
-
-
-
+.mobile-view-flex4-wrap{
+    display: none;
+}
 .preview {
     display: none;
     margin-left: 15px;

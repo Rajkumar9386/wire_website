@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="../../css/responsive.css">
     <link rel="stylesheet" href="../../css/startRating.css">
+    <link rel="stylesheet" href="../../css/jquery.popVideo.css">
     <title>Wire Website</title>
   </head>
   <body>
@@ -210,9 +211,8 @@
                         </div>
                         <div class="offset-md-1 col-md-9 col-8">
                             <div class="video-container celebrities-video" id="c-video">
-                                <video width="100%" class="video" id="celebrity-video" muted autoplay>
-                                    <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4" type="video/mp4">
-                                  </video>
+                                <video autoplay id="celebrity-video" width="100%" class="video" webkit-playsinline playsinline data-video="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4" src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4">
+                                </video>
                                 <div class="playpause"></div>
                             </div>
                         </div>
@@ -264,9 +264,8 @@
                             </div>
                             <div class="col-md-5 col-5 pb-15 px-7">
                                 <div class="company-video-box" id="celebrity-video2">
-                                    <video width="100%" class="video" muted>
-                                        <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4" type="video/mp4">
-                                      </video>
+                                    <video width="100%" class="video" webkit-playsinline playsinline data-video="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4" src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4">
+                                    </video>
                                     <div class="playpause"></div>
                                 </div>
                             </div>
@@ -727,9 +726,8 @@
             <div class="row">
                 <div class="col-md-12 sm-px-15">
                     <div class="video-container" id="celebrity-video3">
-                        <video width="100%" height="300px" class="video" muted>
-                            <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4" type="video/mp4">
-                          </video>
+                        <video width="100%" height="300px" class="video" webkit-playsinline playsinline data-video="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4" src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4">
+                        </video>
                         <div class="playpause"></div>
                     </div>
                 </div>
@@ -1312,17 +1310,15 @@
             <div class="row px-150-py-40">
                 <div class="col-md-6 mb-4">
                     <div class="video-container" id="celebrity-video4">
-                        <video width="100%" height="250px" class="video" muted>
-                            <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4" type="video/mp4">
-                          </video>
+                        <video width="100%" height="250px" class="video" webkit-playsinline playsinline data-video="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4" src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4">
+                        </video>
                         <div class="playpause"></div>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="video-container" id="celebrity-video5">
-                        <video width="100%" height="250px" class="video" muted>
-                            <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4" type="video/mp4">
-                          </video>
+                        <video width="100%" height="250px" class="video" webkit-playsinline playsinline data-video="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4" src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4">
+                        </video>
                         <div class="playpause"></div>
                     </div>
                 </div>
@@ -1412,6 +1408,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-visible/1.2.0/jquery.visible.min.js" integrity="sha512-771ZvVCYr4EfUGXr63AcX7thw7EKa6QE1fhxi8JG7mPacB/arC0cyvYPXKUkCrX2sYKnnFCZby3ZZik42jOuSQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="../../js/startRating.js"></script>
+    <script src="../../js/jquery.popVideo.js"></script>
     
     <script>
         $(".navbar-toggler").click(function(){
@@ -1445,38 +1442,46 @@
     </script>
     <script>
 
+        // $(document).on("click",".video", function () {
+        //     var video = $(this);
+        //     // video.on('click', function(e){
+        //         var vid = video[0];
+        //         vid.play();
+        //         if (vid.requestFullscreen) {
+        //         vid.requestFullscreen();
+        //         } else if (vid.mozRequestFullScreen) {
+        //         vid.mozRequestFullScreen();
+        //         } else if (vid.webkitRequestFullscreen) {
+        //         vid.webkitRequestFullscreen();
+        //         }
+        //     // });
+        // });
         $(document).on("click",".video", function () {
-            var video = $(this);
-            // video.on('click', function(e){
-                var vid = video[0];
-                vid.play();
-                if (vid.requestFullscreen) {
-                vid.requestFullscreen();
-                } else if (vid.mozRequestFullScreen) {
-                vid.mozRequestFullScreen();
-                } else if (vid.webkitRequestFullscreen) {
-                vid.webkitRequestFullscreen();
-                }
-            // });
+            $(this).get(0).pause();
+            $(this).popVideo({
+                playOnOpen: true,
+                closeOnEnd: true,
+                pauseOnClose: true,
+            }).open()
         });
         // Video
         $("video").prop('muted', true);
-        $("#c-video .playpause").hide();
-        $('#celebrity-video').parent().click(function () {
-            $("video#celebrity-video").prop('muted', false);
-        });
-        $('#celebrity-video2').parent().click(function () {
-            $("#celebrity-video2 video").prop('muted', false);
-        });
-        $('#celebrity-video3').parent().click(function () {
-            $("#celebrity-video3 video").prop('muted', false);
-        });
-        $('#celebrity-video4').parent().click(function () {
-            $("#celebrity-video4 video").prop('muted', false);
-        });
-        $('#celebrity-video5').parent().click(function () {
-            $("#celebrity-video5 video").prop('muted', false);
-        });
+        // $("#c-video .playpause").hide();
+        // $('#celebrity-video').parent().click(function () {
+        //     $("video#celebrity-video").prop('muted', false);
+        // });
+        // $('#celebrity-video2').parent().click(function () {
+        //     $("#celebrity-video2 video").prop('muted', false);
+        // });
+        // $('#celebrity-video3').parent().click(function () {
+        //     $("#celebrity-video3 video").prop('muted', false);
+        // });
+        // $('#celebrity-video4').parent().click(function () {
+        //     $("#celebrity-video4 video").prop('muted', false);
+        // });
+        // $('#celebrity-video5').parent().click(function () {
+        //     $("#celebrity-video5 video").prop('muted', false);
+        // });
 
         // $('.video').parent().click(function () {
         //     if($(this).children(".video").get(0).paused){        
