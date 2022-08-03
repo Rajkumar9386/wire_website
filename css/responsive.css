@@ -53,6 +53,38 @@
         position: static;
         text-align: center;
     }
+    .product-desc2{
+        font: 13px 'Helvetica_Neu_Bold', sans-serif;
+        color: #000;
+        margin-bottom: 10px;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .product-title2 {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        height: 35px;
+        font: 15px 'Helvetica_Neu_Bold', sans-serif;
+        color: #000;
+        margin-bottom: 10px;
+    }
+    .product-actual-price2 {
+        color: #0069D9;
+        font: 13px 'HelveticaNeue', sans-serif;
+        text-decoration: line-through;
+        margin-bottom: 0px;
+    }
+    .product-discount-price2 {
+        font: 18px 'Helvetica_Neu_Bold', sans-serif;
+        color: #000;
+        margin-bottom: 10px;
+    }
     .special-imgs-inner-wrap{
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
