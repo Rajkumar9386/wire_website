@@ -2307,9 +2307,35 @@ html[dir="rtl"] .form-select{
     color: #A6ADB4;
 }
 .checkout-table tbody tr td{
-    vertical-align: middle;
+    vertical-align: bottom;
     text-align: center;
     font: 14px 'Helvetica_Neu_Bold', sans-serif;
+    padding-bottom: 23px;
+}
+.checkout-table tbody tr:nth-last-child(2), .checkout-table tbody tr:nth-last-child(1){
+    border-bottom: 1px solid #dee2e6!important;
+}
+.carousel-cards-wrap{
+    box-shadow: 0px 0px 5px 3px #ddd;
+    border-radius: 10px;
+    padding: 1px 0 0 0;
+}
+.x-cite-product-title{
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 7px !important;
+    margin: 7px 15px 15px 15px;
+}
+.x-cite-product-carosuel{
+    padding-bottom: 15px;
+}
+.x-cite-product-carosuel .item {
+    padding: 0px 7px !important;
+}
+.x-cite-product-carosuel .owl-prev{
+    left: 0px;
+}
+.x-cite-product-carosuel .owl-next{
+    right: 0px;
 }
 .form-check-input[type=radio].form-radio{
     border-radius: 50% !important;
